@@ -31,9 +31,10 @@ Cada card de materia deve ter:
 - categoria;
 - titulo;
 - linha de apoio;
-- texto completo;
+- texto completo, com 3 a 6 paragrafos e normalmente 800+ caracteres;
 - fontes textuais verificadas com URLs;
-- grid/carrossel com varias opcoes de imagem, quando houver;
+- grid/carrossel com varias opcoes de imagem visiveis/renderizaveis, quando
+  houver;
 - credito e status de uso de cada imagem;
 - botao `Aprovar materia`;
 - estado visual `pendente` ou `aprovada`;
@@ -48,10 +49,43 @@ Cada materia deve ter varias imagens candidatas sempre que possivel.
 
 Cada imagem precisa ter:
 
-- URL ou caminho local;
+- URL/caminho local renderizavel, em campo `url`, `src` ou equivalente;
 - credito;
 - fonte/pagina da imagem;
 - status: `segura para uso`, `usar com cautela` ou `nao usar sem autorizacao`.
+
+Imagem candidata so conta se aparecer visualmente na pagina. Nao basta escrever
+o credito ou a origem da foto.
+
+Errado:
+
+```json
+{ "label": "Anne Hathaway no Oscar", "credito": "Getty Images" }
+```
+
+Certo:
+
+```json
+{
+  "label": "Anne Hathaway no Oscar",
+  "url": "imagens/anne-hathaway-oscar.jpg",
+  "credito": "Getty Images",
+  "status": "usar com cautela"
+}
+```
+
+O HTML deve renderizar a imagem:
+
+```html
+<img src="imagens/anne-hathaway-oscar.jpg" alt="Anne Hathaway no Oscar">
+```
+
+Se a URL externa falhar, estiver bloqueada ou nao carregar por hotlink, baixar
+ou copiar a imagem para a pasta da propria selecao:
+
+```text
+selecao-AAAAMMDD-HHMM/imagens/
+```
 
 As imagens candidatas nao devem ser retiradas exatamente das mesmas paginas
 usadas como fontes textuais da materia.
@@ -69,6 +103,7 @@ e explicar o motivo no card.
 A pagina precisa permitir:
 
 - clicar em uma imagem para selecionar;
+- visualizar a miniatura real de cada imagem;
 - clicar em `Aprovar materia`;
 - salvar a escolha no `localStorage`;
 - recarregar a pagina sem perder escolhas;
@@ -110,3 +145,6 @@ Nao colar a selecao inteira no chat.
 - Fazer pagina sem botao de aprovar.
 - Fazer pagina sem botao de copiar numero.
 - Fazer pagina sem opcoes de imagem quando havia imagens disponiveis.
+- Fazer pagina com "opcoes de imagem" que mostram apenas texto/credito, sem
+  miniatura real.
+- Usar texto curto de cardapio como texto da Etapa 2.
