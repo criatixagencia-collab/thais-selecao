@@ -3,88 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thais Selecao — 19/06/2026</title>
+<title>Thais - Selecoes Editoriais</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0d0d0d;color:#e0e0e0;padding:20px}
-  .container{max-width:1200px;margin:0 auto}
-  h1{font-size:2em;color:#fff;margin-bottom:4px}
-  .subtitle{color:#888;margin-bottom:8px;font-size:0.95em}
-  .atualiz{color:#555;font-size:0.8em;margin-bottom:24px}
-  .filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
-  .filtro{background:#1a1a1a;border:1px solid #333;color:#aaa;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:0.85em;transition:all 0.2s}
-  .filtro:hover,.filtro.ativo{background:#e50914;border-color:#e50914;color:#fff}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-  .card{background:#1a1a1a;border-radius:12px;padding:18px;border:1px solid #2a2a2a;transition:all 0.2s;cursor:pointer}
-  .card:hover{border-color:#e50914;transform:translateY(-2px)}
-  .card .numero{display:inline-block;background:#e50914;color:#fff;font-weight:700;font-size:0.75em;padding:2px 8px;border-radius:10px;margin-bottom:8px}
-  .card .categoria{color:#888;font-size:0.8em;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
-  .card h3{color:#fff;font-size:1em;margin-bottom:8px;line-height:1.4}
-  .card .resumo{color:#aaa;font-size:0.85em;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .card .forca{margin-top:10px;font-size:0.8em}
-  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0d0d0d;color:#e0e0e0;padding:40px 20px}
+  .container{max-width:600px;margin:0 auto;text-align:center}
+  h1{font-size:1.8em;color:#fff;margin-bottom:8px}
+  .sub{color:#888;margin-bottom:32px}
+  .selecao{display:block;background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:20px;margin-bottom:16px;text-decoration:none;color:#e0e0e0;transition:all 0.2s}
+  .selecao:hover{border-color:#e50914;transform:translateY(-2px)}
+  .selecao .data{color:#e50914;font-weight:700;font-size:0.85em;margin-bottom:4px}
+  .selecao .tit{color:#fff;font-size:1.1em;margin-bottom:4px}
+  .selecao .desc{color:#888;font-size:0.85em}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>📰 Seleção Thais</h1>
-  <p class="subtitle">19 de junho de 2026 · 15 pautas fortes</p>
-  <p class="atualiz">🆕 Rodagem da tarde inclui Anne Hathaway</p>
+  <h1>📰 Selecoes Thais</h1>
+  <p class="sub">Selecoes editoriais para o ENTRETEU</p>
 
-  <div class="filtros">
-    <span class="filtro ativo" onclick="filtrar('todas')">Todas</span>
-    <span class="filtro" onclick="filtrar('famosos')">Famosos</span>
-    <span class="filtro" onclick="filtrar('novelas')">Novelas/TV</span>
-    <span class="filtro" onclick="filtrar('musica')">Música</span>
-    <span class="filtro" onclick="filtrar('reality')">Reality</span>
-  </div>
+  <a class="selecao" href="selecao-20260619-1704/index.html">
+    <div class="data">19/06/2026 — 17h04</div>
+    <div class="tit">18 pautas fortes (rodada vespertina)</div>
+    <div class="desc">Com Anne Hathaway, Karoline Lima, Maria Bethânia e mais</div>
+  </a>
 
-  <div class="grid" id="grid"></div>
+  <a class="selecao" href="selecao-19-06-2026-v2/01-anne-hathaway-gravidez.md" style="opacity:0.5">
+    <div class="data">19/06/2026 — 14h30</div>
+    <div class="tit">15 pautas fortes (1ª rodada)</div>
+    <div class="desc">Versao anterior</div>
+  </a>
 </div>
-
-<script>
-const pautas = [
-  {n:1,cat:'famosos',tit:'Anne Hathaway anuncia gravidez do terceiro filho',resumo:'A atriz vencedora do Oscar esta esperando mais um filho com o marido Adam Shulman.'},
-  {n:2,cat:'novelas',tit:'Erro ao vivo sobre morte de Jorge Messi leva a demissoes',resumo:'Apresentadora argentina anunciou ao vivo que o pai de Messi havia morrido. Emissora demitiu toda a equipe.'},
-  {n:3,cat:'famosos',tit:'Luana Piovani volta a debochar de Neymar na Copa',resumo:'"Evitem", disse a atriz, reacendendo a rivalidade publica com o jogador durante a Copa.'},
-  {n:4,cat:'famosos',tit:'Virginia Fonseca: amigas fugiram de tiroteio em NY',resumo:'"Ela sai de Caxias para NY para ter tiroteio. Loucura", disse Virginia sobre as amigas na Times Square.'},
-  {n:5,cat:'famosos',tit:'Juliette explica polemica sobre barrar marido de amiga',resumo:'Conjuge cometeu violencia contra a amiga. "Nao convidarei agressores para meu casamento", afirmou.'},
-  {n:6,cat:'famosos',tit:'Esposa de Gabriel Magalhaes desabafa sobre criticas',resumo:'Ela saiu em defesa do zagueiro da Selecao durante a Copa, pedindo mais respeito.'},
-  {n:7,cat:'famosos',tit:'Modelo revela que foi desbloqueada por Vini Jr.',resumo:'Bruna Pinheiro percebeu desbloqueio apos estreia do jogador na Copa: "assunto ficou para tras".'},
-  {n:8,cat:'famosos',tit:'Carlinhos Maia vira modelo do Chelsea',resumo:'Influenciador foi escolhido pelo clube ingles para campanha; decisao dividiu opinioes.'},
-  {n:9,cat:'reality',tit:'Jordana do BBB 26 chora e irrita web',resumo:'"Nem todo desabafo e reclamacao", disse a ex-sister ao rebater criticas apos desabafo emotivo.'},
-  {n:10,cat:'novelas',tit:'Miguel Falabella planeja voltar a escrever novelas',resumo:'Apos 15 anos de hiato, autor revela no Roda Viva planos de retorno com roteiristas de Encantado\'s.'},
-  {n:11,cat:'novelas',tit:'Leticia Colin sobre vinganca em Quem Ama Cuida',resumo:'Adriana sai da prisao apos 6 anos e planeja vinganca. "Nao vai ser facil", adianta a atriz.'},
-  {n:12,cat:'novelas',tit:'Globo escala Ticiane Pinheiro para Quem Ama Cuida',resumo:'Apresentadora fara sua estreia como atriz em novelas na trama das seis.'},
-  {n:13,cat:'musica',tit:'Rock in Rio Lisboa comeca com brasileiros',resumo:'Alok, Pedro Sampaio e Sepultura no festival. Ingressos do 1o fim de semana esgotados.'},
-  {n:14,cat:'musica',tit:'Luan Santana e Wesley Safadao no Sao Joao de Caruaru',resumo:'Fim de semana historico: Wesley, Matheus & Kauan e Luan no Patio Luiz Gonzaga.'},
-  {n:15,cat:'musica',tit:'MC Negao Original investigado por golpe de R$ 100M',resumo:'Foragido, funkeiro lancou musica no Top 20. Lei nao proibe lancamentos, diz especialista.'}
-];
-
-const catMap = {famosos:'Famosos / Copa',novelas:'Novelas / TV',musica:'Musica',reality:'Reality'};
-
-function render(cat) {
-  const grid = document.getElementById('grid');
-  const f = cat === 'todas' ? pautas : pautas.filter(p => p.cat === cat);
-  grid.innerHTML = f.map(p => {
-    const n = String(p.n).padStart(2, '0');
-    return '<div class="card" onclick="window.open(\'selecao-19-06-2026-v2/' + n + '.md\',\'_blank\')">' +
-      '<span class="numero">#' + n + '</span>' +
-      '<div class="categoria">' + catMap[p.cat] + '</div>' +
-      '<h3>' + p.tit + '</h3>' +
-      '<div class="resumo">' + p.resumo + '</div>' +
-      '<div class="forca">🟢 Forte</div>' +
-      '</div>';
-  }).join('');
-}
-
-function filtrar(cat) {
-  document.querySelectorAll('.filtro').forEach(f => f.classList.remove('ativo'));
-  event.target.classList.add('ativo');
-  render(cat);
-}
-
-render('todas');
-</script>
 </body>
 </html>
