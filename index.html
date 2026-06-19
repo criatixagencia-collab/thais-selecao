@@ -3,38 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seleção ENTRETEU — 19/06/2026</title>
+<title>Thais Selecao — 19/06/2026</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d0d0d; color: #e0e0e0; padding: 20px; }
-  .container { max-width: 1200px; margin: 0 auto; }
-  h1 { font-size: 2em; color: #fff; margin-bottom: 4px; }
-  .subtitle { color: #888; margin-bottom: 30px; font-size: 0.95em; }
-  .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
-  .filtro { background: #1a1a1a; border: 1px solid #333; color: #aaa; padding: 6px 14px; border-radius: 20px; cursor: pointer; font-size: 0.85em; transition: all 0.2s; }
-  .filtro:hover, .filtro.ativo { background: #e50914; border-color: #e50914; color: #fff; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-  .card { background: #1a1a1a; border-radius: 12px; padding: 18px; border: 1px solid #2a2a2a; transition: all 0.2s; cursor: pointer; }
-  .card:hover { border-color: #e50914; transform: translateY(-2px); }
-  .card .numero { display: inline-block; background: #e50914; color: #fff; font-weight: 700; font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
-  .card .categoria { color: #888; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-  .card h3 { color: #fff; font-size: 1em; margin-bottom: 8px; line-height: 1.4; }
-  .card .resumo { color: #aaa; font-size: 0.85em; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .card .forca { margin-top: 10px; font-size: 0.8em; }
-  .card .fonte { color: #666; font-size: 0.75em; margin-top: 6px; }
-  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0d0d0d;color:#e0e0e0;padding:20px}
+  .container{max-width:1200px;margin:0 auto}
+  h1{font-size:2em;color:#fff;margin-bottom:4px}
+  .subtitle{color:#888;margin-bottom:8px;font-size:0.95em}
+  .atualiz{color:#555;font-size:0.8em;margin-bottom:24px}
+  .filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .filtro{background:#1a1a1a;border:1px solid #333;color:#aaa;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:0.85em;transition:all 0.2s}
+  .filtro:hover,.filtro.ativo{background:#e50914;border-color:#e50914;color:#fff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .card{background:#1a1a1a;border-radius:12px;padding:18px;border:1px solid #2a2a2a;transition:all 0.2s;cursor:pointer}
+  .card:hover{border-color:#e50914;transform:translateY(-2px)}
+  .card .numero{display:inline-block;background:#e50914;color:#fff;font-weight:700;font-size:0.75em;padding:2px 8px;border-radius:10px;margin-bottom:8px}
+  .card .categoria{color:#888;font-size:0.8em;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+  .card h3{color:#fff;font-size:1em;margin-bottom:8px;line-height:1.4}
+  .card .resumo{color:#aaa;font-size:0.85em;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card .forca{margin-top:10px;font-size:0.8em}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>📰 Seleção ENTRETEU</h1>
+  <h1>📰 Seleção Thais</h1>
   <p class="subtitle">19 de junho de 2026 · 15 pautas fortes</p>
+  <p class="atualiz">🆕 Rodagem da tarde inclui Anne Hathaway</p>
 
   <div class="filtros">
     <span class="filtro ativo" onclick="filtrar('todas')">Todas</span>
     <span class="filtro" onclick="filtrar('famosos')">Famosos</span>
     <span class="filtro" onclick="filtrar('novelas')">Novelas/TV</span>
-    <span class="filtro" onclick="filtrar('musica')">Música</span>
+    <span class="filtro" onclick="filtrar('musica')">Música</span>
     <span class="filtro" onclick="filtrar('reality')">Reality</span>
   </div>
 
@@ -43,47 +44,44 @@
 
 <script>
 const pautas = [
-  {n:1, cat:"novelas", tit:"Erro ao vivo sobre morte de Jorge Messi leva a demissões", resumo:"Apresentadora argentina Florencia Peña anunciou ao vivo que o pai de Messi havia morrido. A emissora demitiu toda a equipe e pediu desculpas públicas.", cor:"#e50914"},
-  {n:2, cat:"famosos", tit:"Luana Piovani volta a debochar de Neymar na Copa: 'Evitem'", resumo:"A atriz reacendeu a rivalidade pública com o jogador durante a Copa do Mundo, gerando reações imediatas nas redes.", cor:"#e50914"},
-  {n:3, cat:"famosos", tit:"Virginia Fonseca: amigas fugiram de tiroteio em NY", resumo:"Amigas de Virginia estavam na Times Square durante um tiroteio. 'Ela sai de Caxias para NY para ter tiroteio. Loucura', disse.", cor:"#e50914"},
-  {n:4, cat:"famosos", tit:"Juliette explica polêmica sobre barrar marido de amiga no casamento", resumo:"Juliette disse que o cônjuge em questão cometeu violência contra a amiga e que não convidará agressores para seu casamento.", cor:"#e50914"},
-  {n:5, cat:"famosos", tit:"Esposa de Gabriel Magalhães desabafa sobre críticas ao jogador na Copa", resumo:"Ela saiu em defesa do zagueiro da Seleção, pedindo mais respeito com a família dos atletas.", cor:"#e50914"},
-  {n:6, cat:"famosos", tit:"Modelo revela que foi desbloqueada por Vini Jr. após polêmica", resumo:"Bruna Pinheiro percebeu o desbloqueio após a estreia de Vini Jr. na Copa e interpreta como sinal de que 'o assunto ficou para trás'.", cor:"#e50914"},
-  {n:7, cat:"famosos", tit:"Carlinhos Maia vira modelo do Chelsea e provoca reações", resumo:"O influenciador foi escolhido como modelo do clube inglês; decisão dividiu opiniões nas redes.", cor:"#e50914"},
-  {n:8, cat:"reality", tit:"Jordana do BBB 26 chora e irrita web", resumo:"'Por que eu sou assim?', desabafou a ex-sister ao falar da dificuldade pós-reality. Ela rebateu críticas: 'Nem todo desabafo é reclamação'.", cor:"#e50914"},
-  {n:9, cat:"novelas", tit:"Miguel Falabella planeja voltar a escrever novelas após 15 anos", resumo:"Autor revelou no Roda Viva que está desenvolvendo ideias com as roteiristas de Encantado's.", cor:"#e50914"},
-  {n:10, cat:"novelas", tit:"Leticia Colin abre o jogo sobre vingança em Quem Ama Cuida", resumo:"Adriana sai da prisão após 6 anos e arquiteta plano de vingança contra os vilões. 'Não vai ser fácil', adianta a atriz.", cor:"#e50914"},
-  {n:11, cat:"novelas", tit:"Globo escala Ticiane Pinheiro para Quem Ama Cuida", resumo:"Apresentadora fará sua estreia como atriz em novelas na trama das seis da Globo.", cor:"#e50914"},
-  {n:12, cat:"musica", tit:"Alok, Pedro Sampaio e Sepultura no Rock in Rio Lisboa", resumo:"Ingressos do 1º fim de semana esgotados. Katy Perry e Linkin Park também estão na programação.", cor:"#e50914"},
-  {n:13, cat:"musica", tit:"Luan Santana e Wesley Safadão no São João de Caruaru", resumo:"Fim de semana histórico no Maior São João do Mundo: Wesley (sexta), Matheus & Kauan (sábado) e Luan (domingo).", cor:"#e50914"},
-  {n:14, cat:"musica", tit:"MC Negão Original investigado por golpe de R$ 100 milhões", resumo:"Foragido, o funkeiro lançou música que está no Top 20. Especialista diz que lei não proíbe lançamentos.", cor:"#e50914"},
-  {n:15, cat:"novelas", tit:"Além do Tempo amarga pior audiência das tardes da Globo em 5 anos", resumo:"Reprise acumula 10,2 pontos no Ibope, queda de 12% em relação à antecessora Terra Nostra.", cor:"#e50914"}
+  {n:1,cat:'famosos',tit:'Anne Hathaway anuncia gravidez do terceiro filho',resumo:'A atriz vencedora do Oscar esta esperando mais um filho com o marido Adam Shulman.'},
+  {n:2,cat:'novelas',tit:'Erro ao vivo sobre morte de Jorge Messi leva a demissoes',resumo:'Apresentadora argentina anunciou ao vivo que o pai de Messi havia morrido. Emissora demitiu toda a equipe.'},
+  {n:3,cat:'famosos',tit:'Luana Piovani volta a debochar de Neymar na Copa',resumo:'"Evitem", disse a atriz, reacendendo a rivalidade publica com o jogador durante a Copa.'},
+  {n:4,cat:'famosos',tit:'Virginia Fonseca: amigas fugiram de tiroteio em NY',resumo:'"Ela sai de Caxias para NY para ter tiroteio. Loucura", disse Virginia sobre as amigas na Times Square.'},
+  {n:5,cat:'famosos',tit:'Juliette explica polemica sobre barrar marido de amiga',resumo:'Conjuge cometeu violencia contra a amiga. "Nao convidarei agressores para meu casamento", afirmou.'},
+  {n:6,cat:'famosos',tit:'Esposa de Gabriel Magalhaes desabafa sobre criticas',resumo:'Ela saiu em defesa do zagueiro da Selecao durante a Copa, pedindo mais respeito.'},
+  {n:7,cat:'famosos',tit:'Modelo revela que foi desbloqueada por Vini Jr.',resumo:'Bruna Pinheiro percebeu desbloqueio apos estreia do jogador na Copa: "assunto ficou para tras".'},
+  {n:8,cat:'famosos',tit:'Carlinhos Maia vira modelo do Chelsea',resumo:'Influenciador foi escolhido pelo clube ingles para campanha; decisao dividiu opinioes.'},
+  {n:9,cat:'reality',tit:'Jordana do BBB 26 chora e irrita web',resumo:'"Nem todo desabafo e reclamacao", disse a ex-sister ao rebater criticas apos desabafo emotivo.'},
+  {n:10,cat:'novelas',tit:'Miguel Falabella planeja voltar a escrever novelas',resumo:'Apos 15 anos de hiato, autor revela no Roda Viva planos de retorno com roteiristas de Encantado\'s.'},
+  {n:11,cat:'novelas',tit:'Leticia Colin sobre vinganca em Quem Ama Cuida',resumo:'Adriana sai da prisao apos 6 anos e planeja vinganca. "Nao vai ser facil", adianta a atriz.'},
+  {n:12,cat:'novelas',tit:'Globo escala Ticiane Pinheiro para Quem Ama Cuida',resumo:'Apresentadora fara sua estreia como atriz em novelas na trama das seis.'},
+  {n:13,cat:'musica',tit:'Rock in Rio Lisboa comeca com brasileiros',resumo:'Alok, Pedro Sampaio e Sepultura no festival. Ingressos do 1o fim de semana esgotados.'},
+  {n:14,cat:'musica',tit:'Luan Santana e Wesley Safadao no Sao Joao de Caruaru',resumo:'Fim de semana historico: Wesley, Matheus & Kauan e Luan no Patio Luiz Gonzaga.'},
+  {n:15,cat:'musica',tit:'MC Negao Original investigado por golpe de R$ 100M',resumo:'Foragido, funkeiro lancou musica no Top 20. Lei nao proibe lancamentos, diz especialista.'}
 ];
 
-function render(categoria) {
+const catMap = {famosos:'Famosos / Copa',novelas:'Novelas / TV',musica:'Musica',reality:'Reality'};
+
+function render(cat) {
   const grid = document.getElementById('grid');
-  const filtradas = categoria === 'todas' ? pautas : pautas.filter(p => p.cat === categoria);
-  grid.innerHTML = filtradas.map(p => \`
-    <div class="card" onclick="abrirDetalhe(\${p.n})">
-      <span class="numero">#\${String(p.n).padStart(2,'0')}</span>
-      <div class="categoria">\${p.cat === 'famosos' ? 'Famosos / Copa' : p.cat === 'novelas' ? 'Novelas / TV' : p.cat === 'musica' ? 'Música' : 'Reality'}</div>
-      <h3>\${p.tit}</h3>
-      <div class="resumo">\${p.resumo}</div>
-      <div class="forca">🟢 Forte</div>
-      <div class="fonte">📄 selecao-19-06-2026/\${String(p.n).padStart(2,'0')}.md</div>
-    </div>
-  \`).join('');
+  const f = cat === 'todas' ? pautas : pautas.filter(p => p.cat === cat);
+  grid.innerHTML = f.map(p => {
+    const n = String(p.n).padStart(2, '0');
+    return '<div class="card" onclick="window.open(\'selecao-19-06-2026-v2/' + n + '.md\',\'_blank\')">' +
+      '<span class="numero">#' + n + '</span>' +
+      '<div class="categoria">' + catMap[p.cat] + '</div>' +
+      '<h3>' + p.tit + '</h3>' +
+      '<div class="resumo">' + p.resumo + '</div>' +
+      '<div class="forca">🟢 Forte</div>' +
+      '</div>';
+  }).join('');
 }
 
 function filtrar(cat) {
   document.querySelectorAll('.filtro').forEach(f => f.classList.remove('ativo'));
   event.target.classList.add('ativo');
   render(cat);
-}
-
-function abrirDetalhe(n) {
-  const num = String(n).padStart(2,'0');
-  window.open(\`selecao-19-06-2026/\${num}.md\`, '_blank');
 }
 
 render('todas');
