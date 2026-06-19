@@ -20,6 +20,11 @@ npm run selection:interactive -- --input data/selecao-pronta.json
 Se o gerador falhar por texto curto ou imagem insuficiente, a pagina NAO deve
 ser publicada. A Thais precisa voltar, escrever melhor e buscar mais imagens.
 
+Atalho proibido: gerar `index.html` manual com `const p = [...]`, `imgs: []`,
+`src: ""`, ou cards de imagem escritos na mao. Esse padrao produz paginas com
+imagem pequena, imagem quebrada e falsas opcoes. Se isso acontecer, apagar a
+tentativa local, voltar para o JSON e rodar o gerador oficial.
+
 ## Local correto
 
 Criar uma pasta unica por data e horario:
@@ -75,6 +80,14 @@ Cada imagem precisa ter:
 Imagem candidata so conta se aparecer visualmente na pagina. Nao basta escrever
 o credito ou a origem da foto.
 
+Tambem nao conta como imagem:
+
+- `src` vazio;
+- `imgs: []`;
+- "Instagram via Apify" sem arquivo/URL direta renderizavel;
+- "Getty", "Divulgacao", "Reproducao", "pendente" ou "verificar" sem miniatura;
+- arquivo `.jpg` que na verdade e texto de erro, 404 ou pagina HTML salva.
+
 Errado:
 
 ```json
@@ -108,13 +121,26 @@ selecao-AAAAMMDD-HHMM/imagens/
 As imagens candidatas nao devem ser retiradas exatamente das mesmas paginas
 usadas como fontes textuais da materia.
 
-Se nao houver imagens suficientes, mostrar claramente:
+Se nao houver imagens suficientes, a acao padrao nao e publicar com pendencia.
+A Thais deve buscar outras fontes, baixar/copiar as imagens para
+`selecao-AAAAMMDD-HHMM/imagens/` e validar de novo. So pode publicar pendencia
+depois de tentar de verdade e avisar Rafael antes.
 
-```text
-Pendente de imagem alternativa
-```
+## Validacao obrigatoria antes de publicar
 
-e explicar o motivo no card.
+Antes de commit/push, a Thais deve conferir a pagina gerada:
+
+- total de materias;
+- total de imagens renderizaveis;
+- zero opcoes com `src` vazio;
+- zero materias com `imgs: []`;
+- zero caminhos locais ausentes;
+- zero arquivos de imagem que sejam texto/HTML/erro;
+- miniaturas em grid ou cards grandes o suficiente para comparar imagens;
+- nenhuma imagem dependente de hotlink externo quando puder ser local.
+
+Se a validacao nao der zero vazias e zero ausentes, a pagina ainda nao esta
+pronta para Rafael.
 
 ## Comportamento esperado em JavaScript
 
@@ -165,4 +191,8 @@ Nao colar a selecao inteira no chat.
 - Fazer pagina sem opcoes de imagem quando havia imagens disponiveis.
 - Fazer pagina com "opcoes de imagem" que mostram apenas texto/credito, sem
   miniatura real.
+- Fazer pagina com `imgs: []`, `src: ""`, "Instagram via Apify", "Getty",
+  "Divulgacao" ou "pendente" como se isso fosse imagem candidata.
+- Publicar selecao interativa feita manualmente em vez de usar o gerador
+  oficial.
 - Usar texto curto de cardapio como texto da Etapa 2.
