@@ -4,6 +4,8 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "selection:interactive": "node scripts/gerar-selecao-interativa.cjs"
+    "selection:interactive": "node scripts/gerar-selecao-interativa.cjs",
+    "selection:validate": "node scripts/validar-selecao-interativa.cjs",
+    "selecao:publicar": "node scripts/publicar-selecao-interativa.cjs"
   }
 }

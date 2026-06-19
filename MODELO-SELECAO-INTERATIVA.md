@@ -11,14 +11,29 @@ no repositorio `criatixagencia-collab/thais-selecao`.
 A Thais nao deve montar HTML artesanalmente na conversa ou no improviso.
 
 Ela deve preparar um JSON com textos completos e imagens candidatas e rodar o
-gerador oficial:
+publicador oficial:
+
+```bash
+npm run selecao:publicar -- --input data/selecao-pronta.json
+```
+
+Esse e o unico comando correto para entregar uma selecao interativa a Rafael. O
+comando gera a pagina, valida, commita e faz push. Se ele falhar por texto curto
+ou imagem insuficiente, a pagina NAO deve ser publicada. A Thais precisa voltar,
+escrever melhor e buscar mais imagens.
+
+O comando abaixo existe apenas para teste local e nao deve ser o caminho final
+de publicacao:
 
 ```bash
 npm run selection:interactive -- --input data/selecao-pronta.json
 ```
 
-Se o gerador falhar por texto curto ou imagem insuficiente, a pagina NAO deve
-ser publicada. A Thais precisa voltar, escrever melhor e buscar mais imagens.
+Se usar o comando de teste, validar antes de qualquer commit:
+
+```bash
+npm run selection:validate -- --dir selecao-AAAAMMDD-HHMM
+```
 
 Atalho proibido: gerar `index.html` manual com `const p = [...]`, `imgs: []`,
 `src: ""`, ou cards de imagem escritos na mao. Esse padrao produz paginas com
@@ -141,6 +156,10 @@ Antes de commit/push, a Thais deve conferir a pagina gerada:
 
 Se a validacao nao der zero vazias e zero ausentes, a pagina ainda nao esta
 pronta para Rafael.
+
+O repositorio tambem tem hook de commit que bloqueia selecao ruim. Se o Git
+recusar o commit, nao usar `--no-verify`: corrigir a entrada e rodar
+`npm run selecao:publicar` novamente.
 
 ## Comportamento esperado em JavaScript
 
