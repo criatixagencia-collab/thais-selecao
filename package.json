@@ -1,0 +1,9 @@
+{
+  "name": "thais-selecao",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "selection:interactive": "node scripts/gerar-selecao-interativa.cjs"
+  }
+}

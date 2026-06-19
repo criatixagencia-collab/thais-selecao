@@ -6,6 +6,20 @@ Quando Rafael pedir `selecao interativa`, `Etapa 2` ou pedir para colocar as
 materias escolhidas em pagina de aprovacao, a Thais deve gerar uma pagina HTML
 no repositorio `criatixagencia-collab/thais-selecao`.
 
+## Regra principal
+
+A Thais nao deve montar HTML artesanalmente na conversa ou no improviso.
+
+Ela deve preparar um JSON com textos completos e imagens candidatas e rodar o
+gerador oficial:
+
+```bash
+npm run selection:interactive -- --input data/selecao-pronta.json
+```
+
+Se o gerador falhar por texto curto ou imagem insuficiente, a pagina NAO deve
+ser publicada. A Thais precisa voltar, escrever melhor e buscar mais imagens.
+
 ## Local correto
 
 Criar uma pasta unica por data e horario:
@@ -46,6 +60,10 @@ rejeitada automaticamente.
 ## Imagens
 
 Cada materia deve ter varias imagens candidatas sempre que possivel.
+
+O minimo operacional padrao e 3 imagens renderizaveis por materia. Se tiver
+menos que isso, o gerador oficial deve falhar e a Thais deve buscar mais imagens
+antes de publicar.
 
 Cada imagem precisa ter:
 
