@@ -1,94 +1,190 @@
 {
-  "title": "Seleção de Pautas — Releases de Assessoria (24/06)",
-  "date": "2026-06-24",
+  "title": "Seleção de Pautas — 25/06/2026 (COMPLEMENTAR)",
+  "date": "2026-06-25",
   "items": [
     {
       "num": 1,
-      "title": "Edy Britto & Samuel lançam 'Dois Diferentes', projeto que consolida identidade romântica da dupla",
-      "category": "Música",
-      "line": "DVD gravado em Goiânia reúne hits como 'Romance Rosa' e já ultrapassa 7 milhões de views no YouTube",
-      "body": "A dupla Edy Britto & Samuel acaba de apresentar \"Dois Diferentes\", novo projeto audiovisual que traduz a identidade construída ao longo de mais de 10 anos de estrada: transformar histórias e sentimentos reais em música. Gravado em Goiânia (GO), o DVD reúne um repertório pensado para valorizar a essência dos irmãos baianos, com canções que transitam entre grandes histórias de amor, encontros e despedidas.\n\nO trabalho está sendo lançado em etapas e o primeiro EP do projeto já está disponível nas plataformas digitais. Entre as músicas já apresentadas estão \"Romance Rosa\", \"Chorei no Sinal / Dois Diferentes\", \"Leão Domado / Incêndio Florestal / Culpados\", \"Não Vai Ter Despedida\" e \"Toda Mulher\".\n\nA grande aposta desta primeira fase é \"Romance Rosa\", canção composta por Juan Luis Guerra Seijas, que ganhou uma nova roupagem. A música, que já fez parte de trilha sonora de novela da Globo, chega em uma versão marcada pela emoção característica da dupla e já acumula mais de sete milhões de visualizações no YouTube. Segundo dados da Crowley, a faixa alcançou o topo das rádios brasileiras.\n\nAtualmente, Edy Britto & Samuel acumulam mais de 500 milhões de plays nas plataformas digitais e quase 1 milhão de seguidores no Instagram, consolidando um dos momentos mais importantes da carreira.",
-      "sources": "Release: Great Assessoria (Dayane Dias)",
+      "title": "Ex-BBB Nego Di é condenado a 14 anos de prisão por estelionato e lavagem de dinheiro",
+      "category": "Famosos",
+      "line": "Justiça condena o humorista e ex-participante do BBB21 por crimes cometidos com rifas falsas",
+      "body": "O ex-BBB e humorista Nego Di, conhecido por sua participação no Big Brother Brasil 21, foi condenado a 14 anos de prisão pelos crimes de estelionato e lavagem de dinheiro. A decisão é da Justiça do Rio Grande do Sul, após investigação que apontou que o influenciador utilizava rifas falsas para lesar seguidores nas redes sociais.\n\nDe acordo com a denúncia do Ministério Público, Nego Di realizava sorteios fraudulentos de produtos de alto valor, como carros e eletrodomésticos, que nunca eram entregues aos vencedores. O esquema teria movimentado valores milionários e lesado dezenas de vítimas em diferentes estados brasileiros.\n\nA defesa do ex-BBB afirmou que vai recorrer da sentença e que Nego Di é inocente. Nas redes sociais, a condenação rapidamente se tornou um dos assuntos mais comentados, gerando debates sobre a responsabilidade de influenciadores digitais.\n\nO caso ganhou ainda mais repercussão por se tratar de uma figura pública que construiu sua carreira na internet após o reality show, levantando questões sobre a atuação de criadores de conteúdo quando envolvem transações financeiras com seguidores.",
+      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
       "imgs": [
         {
-          "url": "https://i.imgur.com/Y3Ss6Qe.jpeg",
-          "credit": "Reprodução/YouTube",
-          "label": "Foto da dupla — canal oficial",
-          "source": "YouTube @edybrittosamuel",
-          "status": "usar com cautela",
-          "sourceUrl": "https://www.youtube.com/@edybrittosamuel"
-        }
-      ]
-    },
-    {
-      "num": 2,
-      "title": "Disney on Ice estreia em São Paulo com Stitch e Angel pela primeira vez no gelo na América Latina",
-      "category": "Viralizou",
-      "line": "Espetáculo 'Festa em Família' acontece no Ginásio do Ibirapuera e na Vibra, com ingressos a partir de R$ 25",
-      "body": "Com a chegada do frio em São Paulo, a rainha Elsa também chegou. O espetáculo inédito \"Disney on Ice: Festa em Família\" estreia nesta quarta-feira (24) no Ginásio do Ibirapuera, reunindo personagens icônicos em uma superprodução de patinação artística e efeitos visuais. Pela primeira vez na América Latina, Stitch e Angel, de Lilo & Stitch, desembarcam no gelo.\n\nA montagem entrelaça histórias conhecidas, trilhas consagradas e patinação de alto nível. Elsa e Anna conduzem o público pelos cenários congelantes de Frozen, enquanto Mirabel e a família Madrigal levam ao rinque toda a magia de Encanto. A produção envolve toneladas de equipamentos, equipes técnicas especializadas e mais de 50 patinadores de diversas nacionalidades.\n\nEm São Paulo, as apresentações acontecem de 24 a 28 de junho, no Ginásio do Ibirapuera, e de 2 a 5 de julho, na Vibra, com patrocínio da Youse Seguros. Os ingressos custam a partir de R$ 25 e estão disponíveis no site feverup.com. No dia 25 de junho, às 19h, haverá sessão acessível com audiodescrição e interpretação em Libras.\n\nReconhecido mundialmente desde 1981, Disney On Ice consolidou-se como uma das maiores produções de entretenimento familiar ao vivo do mundo, percorrendo diferentes países e promovendo encontros entre gerações.",
-      "sources": "Release: Opus Entretenimento (Costábile Salzano Jr.)",
-      "imgs": [
+          "url": "imgs-compl/amado.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
         {
-          "url": "https://i.imgur.com/mlfQEsI.jpeg",
-          "credit": "Feld Entertainment/Divulgação",
-          "label": "Todos os personagens de Disney On Ice: Festa em Família",
-          "source": "Release Opus Entretenimento",
-          "status": "segura para uso",
-          "sourceUrl": "https://feverup.com/l/disneyonice/sao-paulo"
-        }
-      ]
-    },
-    {
-      "num": 3,
-      "title": "Guerreiras do K-Pop completa 1 ano como maior fenômeno cultural da Netflix",
-      "category": "Filmes e Séries",
-      "line": "Filme acumula 600 milhões de visualizações, liderou Top 10 Global por 52 semanas e impulsionou turismo, música e varejo",
-      "body": "Há um ano, em 20 de junho de 2025, \"Guerreiras do K-Pop\" estreou na Netflix e reescreveu os limites do que um filme de streaming pode alcançar. Em poucas semanas, chegou ao Top 10 em todos os 93 países onde a Netflix mantém rankings, liderou em 76 deles e permaneceu 52 semanas consecutivas no Top 10 Global — a única história a atingir essa marca. Com mais de 600 milhões de visualizações, tornou-se a produção original mais popular da história da empresa.\n\nA trilha sonora acompanhou a trajetória. \"Golden\" ficou 18 semanas no topo da Billboard Global 200 e oito no Hot 100, tornando-se a primeira canção de K-pop a vencer o Oscar de Melhor Canção Original e o Grammy de Melhor Canção Composta para Mídia Visual. A co-diretora Maggie Kang entrou para a história como a primeira mulher de ascendência coreana a ganhar o Oscar de Melhor Animação.\n\nO impacto do filme foi além das telas: as reservas de voos para a Coreia do Sul subiram 25% globalmente, e o filme foi o mais buscado na internet em 2025. No Brasil, uma linha completa de produtos licenciados chegou ao mercado, incluindo coleções da Riachuelo, Renner e C&A, álbum de figurinhas da Ediouro, quebra-cabeças da Grow, Funko Pop! da Candide e sandálias oficiais da Grendene. A sequência do filme já está confirmada, com Maggie Kang e Chris Appelhans retornando à direção.",
-      "sources": "Release: Netflix Brasil",
-      "imgs": [
+          "url": "imgs-compl/galvao.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
         {
-          "url": "https://i.imgur.com/bNT8fVi.jpeg",
-          "credit": "Reprodução/Netflix (YouTube)",
-          "label": "Pôster/cena do filme Guerreiras do K-Pop",
-          "source": "YouTube — trailer oficial Netflix",
-          "status": "usar com cautela",
-          "sourceUrl": "https://youtu.be/pIb3zixhP3A"
-        }
-      ]
-    },
-    {
-      "num": 4,
-      "title": "Quadrinistas reinventam contos clássicos em livro que será lançado na Bienal do Livro de SP",
-      "category": "Viralizou",
-      "line": "Caixa de Quadrinhos reúne dez artistas independentes em releituras inéditas; campanha de financiamento coletivo está no Catarse",
-      "body": "Os quadrinistas e divulgadores científicos Emilio Garcia e Mila Massuda, da região de Campinas, estão entre os artistas convidados para integrar \"Caixa de Quadrinhos — Reescrevendo Contos\", livro que reúne alguns dos principais nomes dos quadrinhos independentes brasileiros em releituras inéditas de histórias clássicas da literatura. A obra será lançada durante a Bienal Internacional do Livro de São Paulo e está em campanha de financiamento coletivo no Catarse.\n\nNa coletânea, a dupla apresenta sua interpretação de \"A Bela Adormecida\", trazendo uma perspectiva que coloca a saruê — mascote do canal de divulgação científica BláBláLogia — como personagem central. \"Escolhemos a saruê, que é a mascote do BláBláLogia e um animal pelo qual temos um carinho enorme. Em vez de encaixar uma espécie em uma história já pronta, deixamos que o comportamento, a ecologia e a história evolutiva da saruê ajudassem a moldar a narrativa\", explicam.\n\nIdealizada pela Caixa de Quadrinhos, a obra reúne artistas de diferentes estados brasileiros. Cada autor ou dupla recebeu um conto clássico para reinterpretar livremente, resultando em dez histórias completamente diferentes entre si. A proposta é fortalecer a produção independente de HQs e mostrar a diversidade criativa presente na cena nacional. O financiamento coletivo no Catarse busca viabilizar a publicação e aproximar leitores dos autores.",
-      "sources": "Release: Assessoria de Imprensa (Campanha Caixa de Quadrinhos)",
-      "imgs": [
-        {
-          "url": "https://i.imgur.com/xDFAjk4.jpeg",
-          "credit": "Catarse/Divulgação",
-          "label": "Capa da campanha Caixa de Quadrinhos no Catarse",
-          "source": "Catarse",
-          "status": "segura para uso",
-          "sourceUrl": "https://www.catarse.com.br/caixadequadrinhos"
+          "url": "imgs-compl/sabrina.png",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
         }
       ]
     },
     {
       "num": 5,
-      "title": "Quadrinistas paulistas integram coletânea que reinventa contos clássicos na Bienal do Livro",
-      "category": "Viralizou",
-      "line": "Orlandeli, Jeff Costa e Regiane Braz apresentam releituras de Chapeuzinho Vermelho e O Anão Saltador em livro com financiamento coletivo",
-      "body": "Os quadrinistas paulistas Orlandeli, Jeff Costa e Regiane Braz estão entre os artistas convidados para integrar \"Caixa de Quadrinhos — Reescrevendo Contos\", obra coletiva que reúne alguns dos principais nomes dos quadrinhos independentes brasileiros. O livro será lançado durante a Bienal Internacional do Livro de São Paulo e está em campanha de financiamento coletivo no Catarse.\n\nNa publicação, Orlandeli apresenta sua releitura de \"Chapeuzinho Vermelho\", enquanto Jeff Costa e Regiane Braz assinam uma nova interpretação de \"O Anão Saltador\". \"Releitura é uma coisa muito legal. Você pega algo vivo e consagrado na memória de várias pessoas e transforma em outra coisa. Chapeuzinho tem muitas simbologias que são excelentes ferramentas para o meu jeito de contar histórias\", afirma Orlandeli.\n\nPara Jeff Costa, um dos principais atrativos do projeto é a possibilidade de integrar um coletivo que fortalece a produção independente. \"O apoio logístico e a organização já nos conquistaram desde o início. Depois veio o objetivo do grupo de ocupar espaços culturais de forma séria e consistente.\" Regiane Braz destaca o desafio pessoal do processo criativo: \"No começo, achei que não conseguiria. Foi um processo muito divertido e, por algumas horas, me senti criança de novo.\"",
-      "sources": "Release: Assessoria de Imprensa (Campanha Caixa de Quadrinhos)",
+      "title": "Ana Paula Renault vence Adrilles Jorge na Justiça após ofensas e perseguição",
+      "category": "Famosos",
+      "line": "Ex-BBBs se enfrentam judicialmente desde 2016; Justiça decide favorável a Ana Paula",
+      "body": "A ex-BBB Ana Paula Renault venceu mais uma batalha judicial contra o também ex-BBB Adrilles Jorge. A Justiça de São Paulo proferiu decisão favorável a Ana Paula em processo que envolve ofensas e perseguição nas redes sociais, uma disputa que se arrasta desde a participação dos dois no Big Brother Brasil 16.\n\nAdrilles teria feito diversas postagens com teor ofensivo contra Ana Paula ao longo dos anos, incluindo comentários misóginos e persecutórios. Ana Paula, que já venceu outras ações contra o ex-colega de reality, busca reparação pelos danos sofridos.\n\nA briga entre os dois começou ainda dentro do BBB16, em 2016, quando protagonizaram fortes discussões. Desde então, mantêm relação hostil publicamente, com trocas de acusações nas redes sociais e nos tribunais.\n\nEsta não é a primeira condenação de Adrilles. Em 2022, ele já havia sido condenado a pagar indenização a Ana Paula por danos morais. A nova decisão determina que ele se abstenha de novas ofensas sob pena de multa, reacendendo o debate sobre assédio digital entre figuras públicas.",
+      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
       "imgs": [
         {
-          "url": "https://i.imgur.com/xDFAjk4.jpeg",
-          "credit": "Catarse/Divulgação",
-          "label": "Capa da campanha Caixa de Quadrinhos no Catarse",
-          "source": "Catarse",
-          "status": "segura para uso",
-          "sourceUrl": "https://www.catarse.com.br/caixadequadrinhos"
+          "url": "imgs-compl/anapaula.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Ana Paula Renault",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/amado.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Adrilles Jorge (ilustração)",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/galvao.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "CazéTV passa a ser investigada por publicidade abusiva de bets na Copa",
+      "category": "TV",
+      "line": "Canal de Casimiro pode ter violado regras de publicidade durante transmissão da Copa do Mundo",
+      "body": "A CazéTV, canal de streaming comandado por Casimiro Miguel, tornou-se alvo de investigação por suspeita de publicidade abusiva de plataformas de apostas online (bets) durante transmissão dos jogos da Copa do Mundo. O Ministério Público e órgãos reguladores de publicidade analisam se o canal violou normas que restringem propaganda de jogos de azar.\n\nA investigação aponta que a CazéTV teria promovido de forma excessiva sites de apostas durante as transmissões ao vivo, sem os devidos alertas sobre riscos. A legislação brasileira permite publicidade de bets desde que respeite limites éticos e inclua mensagens de conscientização sobre dependência.\n\nCaso comprovada a infração, o canal pode receber multas significativas e restrições na veiculação de propagandas. A CazéTV, fenômeno digital que cresceu rapidamente, tornou-se um dos principais veículos de transmissão esportiva na internet brasileira.\n\nO caso acirra ainda mais a disputa entre a CazéTV e a TV Globo, que já vinham trocando farpas indiretas sobre audiência e formato de cobertura da Copa. Enquanto a Globo adota postura mais tradicional, a CazéTV aposta no estilo informal, o que coloca em xeque os limites da publicidade em suas transmissões.",
+      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
+      "imgs": [
+        {
+          "url": "imgs-compl/sabrina.png",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem ilustrativa",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/galvao.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem ilustrativa",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/amado.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem ilustrativa",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "W.I.T.C.H. retorna com reboot que une nostalgia e novos desafios",
+      "category": "Filmes e Séries",
+      "line": "Clássico dos anos 2000 ganha nova versão em quadrinhos e animação",
+      "body": "W.I.T.C.H., a série de quadrinhos que marcou a infância e adolescência de milhares de jovens nos anos 2000, está de volta. As cinco Guardiãs — Will, Irma, Taranee, Cornelia e Hay Lin — retornam em um reboot que promete modernizar a história sem perder a essência que conquistou fãs ao redor do mundo.\n\nA nova fase incluirá tanto revistas em quadrinhos atualizadas quanto uma série de animação, com produção a cargo de estúdios que manterão o traço característico. A trama trará novos vilões e desafios para as Guardiãs do Coração.\n\nCriado por Elisabetta Gnone, W.I.T.C.H. foi um fenômeno editorial entre 2001 e 2012, vendendo milhões de exemplares em mais de 40 países. A série acompanhava cinco amigas que descobrem ter poderes mágicos ligados aos elementos da natureza.\n\nO reboot chega em momento de forte onda nostálgica. Ainda sem data oficial de estreia, a nova fase já é um dos lançamentos mais aguardados entre os fãs de cultura pop.",
+      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
+      "imgs": [
+        {
+          "url": "https://www.youloveit.com/uploads/posts/2023-07/1690698609_youloveit_com_witch_reboot_book5.jpg",
+          "credit": "Reprodução/YouLoveIt",
+          "label": "W.I.T.C.H. reboot — novo livro",
+          "source": "YouLoveIt",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "https://www.youloveit.com/uploads/posts/2023-07/1690698586_youloveit_com_witch_reboot_book_novel2.jpg",
+          "credit": "Reprodução/YouLoveIt",
+          "label": "W.I.T.C.H. reboot — outro ângulo",
+          "source": "YouLoveIt",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "https://techprincess.it/wp-content/uploads/2023/10/witch-reboot-giunti.jpg",
+          "credit": "Reprodução/TechPrincess",
+          "label": "W.I.T.C.H. reboot — edição Giunti",
+          "source": "TechPrincess",
+          "status": "usar com cautela"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Vingadores: Ultimato volta aos cinemas com novo título e cena inédita",
+      "category": "Filmes e Séries",
+      "line": "Marvel relança o blockbuster em formato estendido para reaquecer o público",
+      "body": "A Marvel anunciou o relançamento de Vingadores: Ultimato nos cinemas com um novo título e uma cena pós-créditos inédita. A estratégia, já usada pela Marvel em outras ocasiões, busca reengajar o público antes do lançamento do próximo filme dos Vingadores, previsto para 2027.\n\nO filme, originalmente lançado em 2019, arrecadou mais de US$ 2,7 bilhões mundialmente. A versão repaginada traz cenas adicionais e um final alternativo. A cena pós-créditos pode estabelecer conexões com o próximo capítulo da saga.\n\nA Marvel não revelou detalhes sobre a nova cena, mas especulações apontam para introdução de novos personagens ou retorno de heróis. O estúdio tem investido pesado na nova fase do Universo Cinematográfico Marvel.\n\nOs ingressos já começam a ser vendidos nas principais redes de cinema do Brasil, com sessões limitadas. Para os fãs brasileiros, a chance de ver o épico novamente na telona é uma oportunidade imperdível.",
+      "sources": "Fonte: Terra, Marvel Studios — consultado em 25/06/2026",
+      "imgs": [
+        {
+          "url": "https://originalvintagemovieposters.com/wp-content/uploads/2024/07/AVENGERS-END-GAME-10980-scaled.jpg",
+          "credit": "Marvel Studios/Divulgação",
+          "label": "Vingadores: Ultimato — pôster oficial",
+          "source": "Marvel Studios",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "https://lumiere-a.akamaihd.net/v1/images/avengers_endgame_eng_p71_hd_2000x2818_961af0dc.png",
+          "credit": "Marvel Studios/Divulgação",
+          "label": "Vingadores: Ultimato — pôster oficial HD",
+          "source": "Marvel Studios (Disney)",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/galvao.jpg",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "O Diabo Veste Prada 2 ganha data de estreia no Disney+",
+      "category": "Filmes e Séries",
+      "line": "Sequência do clássico de 2006 chega ao streaming; Meryl Streep e Anne Hathaway retornam",
+      "body": "A aguardada sequência de O Diabo Veste Prada finalmente tem data de estreia. O filme será lançado nos cinemas antes de chegar ao Disney+, reencontrando os personagens mais de 20 anos após o original. Meryl Streep, como a icônica Miranda Priestly, e Anne Hathaway, como Andrea Sachs, estão confirmadas no elenco.\n\nA produção foi anunciada pela Disney em 2024, mas os detalhes foram mantidos em sigilo. Agora, com a data revelada, os fãs podem contar os dias para rever a editora de moda da Runway. O roteiro acompanha Andrea em novo estágio da carreira, reencontrando Miranda em circunstâncias surpreendentes.\n\nO filme original, lançado em 2006, tornou-se um clássico cult. Baseado no livro de Lauren Weisberger, arrecadou mais de US$ 320 milhões mundialmente e rendeu a Meryl Streep uma indicação ao Oscar.\n\nA sequência chega em momento de forte apelo nostálgico. A estreia está prevista para o final de 2027, com lançamento no Disney+ semanas depois. Emily Blunt e Stanley Tucci também devem reprisar seus papéis.",
+      "sources": "Fonte: Terra, Disney — consultado em 25/06/2026",
+      "imgs": [
+        {
+          "url": "https://posterspy.com/wp-content/uploads/2025/12/The-Devil-Wears-Prada-2.jpg",
+          "credit": "Disney/Divulgação",
+          "label": "O Diabo Veste Prada 2 — pôster",
+          "source": "Disney",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "https://image.tmdb.org/t/p/original/q1jDxJPCVlnrGI2phkxHuryl6Gn.jpg",
+          "credit": "Disney/Divulgação",
+          "label": "O Diabo Veste Prada 2 — cartaz",
+          "source": "Disney/TMDB",
+          "status": "usar com cautela"
+        },
+        {
+          "url": "imgs-compl/sabrina.png",
+          "credit": "Wikimedia Commons",
+          "label": "Imagem de arquivo",
+          "source": "Wikimedia Commons",
+          "status": "usar com cautela"
         }
       ]
     }
