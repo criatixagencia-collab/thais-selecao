@@ -90,11 +90,112 @@ function slugify(value, fallback) {
 }
 
 function bodyToParagraphs(body) {
-  if (Array.isArray(body)) return body.map((part) => String(part || "").trim()).filter(Boolean);
+  function stripPTags(text) {
+    return String(text).replace(/<\/?p\s*\/?>/gi, "").trim();
+  }
+  if (Array.isArray(body)) return body.map((part) => stripPTags(part)).filter(Boolean);
   return String(body || "")
     .split(/\n{2,}/)
-    .map((part) => part.trim())
+    .map((part) => stripPTags(part))
     .filter(Boolean);
+}
+
+function normalizeForCheck(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function hasFactualAnchor(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const factualPatterns = [
+    /\b(nesta|neste|naquela|naquele|agora|hoje|amanha|ontem)\b/,
+    /\b(segundo|de acordo com|conforme|afirmou|disse|contou|informou|anunciou|confirmou|revelou)\b/,
+    /\b(sera|foi|acontece|acontecera|comeca|comecou|termina|terminou|estreia|estreou|volta|retorna|chega|lanca|lancou)\b/,
+    /\b(janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\b/,
+    /\b\d{4}\b/,
+    /\b(instagram|youtube|globoplay|netflix|max|disney\+|prime video|record|globo|sbt|uol|cnn)\b/,
+    /\b(praia|hospital|tribunal|palco|turne|show|festival|cerimonia|gravidez|gestacao|licenca-maternidade|licenca maternidade)\b/,
+  ];
+  return factualPatterns.some((pattern) => pattern.test(text));
+}
+
+function isAbstractClosing(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const abstractPatterns = [
+    /centro da conversa/,
+    /movimenta a conversa/,
+    /movimenta o debate/,
+    /contexto pessoal importante/,
+    /novo momento/,
+    /nova fase/,
+    /fase atual/,
+    /fase artistica/,
+    /funciona como vitrine/,
+    /vitrine para/,
+    /dialogo com o publico/,
+    /dialoga com o publico/,
+    /estrategic/,
+    /circulacao ampla/,
+    /reposicionamento/,
+    /ganha forca nas redes/,
+    /reacende a atencao/,
+    /recoloca .* no centro/,
+    /ajuda a dimensionar/,
+    /ajuda a ampliar/,
+    /protagonista/,
+  ];
+  return abstractPatterns.some((pattern) => pattern.test(text));
+}
+
+function hasHardBannedClosing(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const hardBannedPatterns = [
+    /centro da conversa/,
+    /contexto pessoal importante/,
+    /viver esse novo momento/,
+    /recoloca .* no centro/,
+    /funciona como vitrine/,
+    /compromisso pontual, mas estrategic/,
+    /ajuda a ampliar o dialogo/,
+    /ajuda a dimensionar/,
+    /^por enquanto\b/,
+    /^ate aqui\b/,
+    /^o que esta confirmado\b/,
+    /^o que fica confirmado\b/,
+    /^neste momento,? o que esta confirmado\b/,
+    /^os registros .* circularam/,
+    /^com o .* (liberado|divulgado|oficializado|definido)/,
+  ];
+  return hardBannedPatterns.some((pattern) => pattern.test(text));
+}
+
+function ensureEditorialClosing(title, paragraphs) {
+  const lastParagraph = paragraphs[paragraphs.length - 1] || "";
+  if (!lastParagraph) return;
+  if (hasHardBannedClosing(lastParagraph)) {
+    throw new Error(
+      `Fechamento proibido para "${title}". ` +
+        "O ultimo paragrafo usa formula ornamental ja banida pelo regimento e precisa ser reescrito ou cortado.",
+    );
+  }
+  if (isAbstractClosing(lastParagraph) && !hasFactualAnchor(lastParagraph)) {
+    throw new Error(
+      `Fechamento abstrato demais para "${title}". ` +
+        "O ultimo paragrafo precisa encerrar com fato, estado atual, proximo passo ou fala verificavel, " +
+        "nao com linguagem ornamental sobre fase, conversa, estrategia ou contexto.",
+    );
+  }
+  if (paragraphs.length >= 4) {
+    const withoutLast = paragraphs.slice(0, -1);
+    if (withoutLast.join(" ").length >= MIN_BODY_CHARS && hasHardBannedClosing(lastParagraph)) {
+      throw new Error(
+        `Fechamento-remendo para "${title}". ` +
+          "Se a materia ja se sustenta sem o ultimo paragrafo, corte em vez de encerrar com recapitulacao.",
+      );
+    }
+  }
 }
 
 function normalizeItems(payload) {
@@ -142,9 +243,18 @@ function candidateStatus(candidate) {
   return candidate.status || "usar com cautela";
 }
 
+function candidateSourceUrl(candidate) {
+  if (!candidate || typeof candidate === "string") return "";
+  return candidate.pagina || candidate.sourceUrl || candidate.source || candidate.originalUrl || candidate.urlOriginal || candidate.fonte || "";
+}
+
 function candidateLabel(candidate, index) {
   if (!candidate || typeof candidate === "string") return `Opcao ${index + 1}`;
   return candidate.label || candidate.title || candidate.alt || `Opcao ${index + 1}`;
+}
+
+function optionLabel(index) {
+  return `Opcao ${index + 1}`;
 }
 
 function imageCandidates(item) {
@@ -184,6 +294,7 @@ function validateText(item, index) {
         "Na Etapa 2 a Thais deve escrever materia completa, nao resumo de cardapio.",
     );
   }
+  ensureEditorialClosing(title, paragraphs);
   return { body, paragraphs };
 }
 
@@ -196,6 +307,43 @@ function extensionFromContentType(contentType, url) {
   const ext = path.extname(String(url || "").split("?")[0]).toLowerCase();
   if ([".jpg", ".jpeg", ".png", ".webp", ".gif"].includes(ext)) return ext === ".jpeg" ? ".jpg" : ext;
   return ".jpg";
+}
+
+function jpegDimensions(buffer) {
+  let offset = 2;
+  while (offset < buffer.length) {
+    if (buffer[offset] !== 0xff) return null;
+    const marker = buffer[offset + 1];
+    const length = buffer.readUInt16BE(offset + 2);
+    if (marker >= 0xc0 && marker <= 0xc3) {
+      return {
+        width: buffer.readUInt16BE(offset + 7),
+        height: buffer.readUInt16BE(offset + 5),
+      };
+    }
+    offset += 2 + length;
+  }
+  return null;
+}
+
+function imageDimensions(buffer) {
+  if (buffer.length >= 24 && buffer.toString("ascii", 1, 4) === "PNG") {
+    return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+  }
+  if (buffer.length >= 10 && buffer[0] === 0xff && buffer[1] === 0xd8) {
+    return jpegDimensions(buffer);
+  }
+  return null;
+}
+
+function imageShape(buffer) {
+  const dimensions = imageDimensions(buffer);
+  if (!dimensions) return {};
+  return {
+    width: dimensions.width,
+    height: dimensions.height,
+    orientation: dimensions.width >= dimensions.height ? "horizontal" : "vertical",
+  };
 }
 
 function resolveLocalImage(url, inputDir) {
@@ -216,7 +364,8 @@ async function copyOrDownloadImage({ url, inputDir, imagesDir, fileBase }) {
     const fileName = `${fileBase}${ext}`;
     const filePath = path.join(imagesDir, fileName);
     fs.copyFileSync(local, filePath);
-    return { fileName, localUrl: `imagens/${fileName}`, bytes: fs.statSync(filePath).size };
+    const buffer = fs.readFileSync(filePath);
+    return { fileName, localUrl: `imagens/${fileName}`, bytes: buffer.length, ...imageShape(buffer) };
   }
 
   if (!/^https?:\/\//i.test(url)) {
@@ -244,7 +393,7 @@ async function copyOrDownloadImage({ url, inputDir, imagesDir, fileBase }) {
     const fileName = `${fileBase}${ext}`;
     const filePath = path.join(imagesDir, fileName);
     fs.writeFileSync(filePath, buffer);
-    return { fileName, localUrl: `imagens/${fileName}`, bytes: buffer.length };
+    return { fileName, localUrl: `imagens/${fileName}`, bytes: buffer.length, ...imageShape(buffer) };
   } finally {
     clearTimeout(timeout);
   }
@@ -261,10 +410,16 @@ async function buildImageOptions(item, inputDir, imagesDir, slug) {
       options.push({
         url: local.localUrl,
         originalUrl: url,
-        label: candidateLabel(candidate, index),
+        sourceUrl: candidateSourceUrl(candidate),
+        label: optionLabel(index),
+        sourceLabel: candidateLabel(candidate, index),
+        optionNumber: index + 1,
         credit: candidateCredit(candidate),
         status: candidateStatus(candidate),
         bytes: local.bytes,
+        width: local.width,
+        height: local.height,
+        orientation: local.orientation,
       });
     } catch (error) {
       console.warn(`Imagem ignorada para "${itemTitle(item)}": ${url} (${error.message})`);
@@ -296,12 +451,32 @@ function renderSources(sources) {
 function renderImageOptions(item) {
   return item.imageOptions.map((image, index) => {
     const id = `img_${item.num}_${index}`;
+    const srcLink = image.pagina || image.sourceUrl || image.source || image.fonte || "";
+    const label = image.label || optionLabel(index);
+    const alt = `${item.title} - ${label}`;
+    const width = Number(image.width) || 1;
+    const height = Number(image.height) || 1;
+    const originalAspect = `${width}/${height}`;
+    const isVertical = image.orientation === "vertical" || height > width;
+    const desktopClass = isVertical ? "crop-desktop crop-cut" : "crop-desktop crop-original";
+    const desktopAspect = isVertical ? "16/9" : originalAspect;
     return (
       `<label class="img-option" for="${escapeHtml(id)}">` +
         `<input type="radio" name="img_${escapeHtml(item.num)}" id="${escapeHtml(id)}" value="${escapeHtml(index)}" data-image-index="${escapeHtml(index)}">` +
-        `<img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.label || item.title)}" loading="lazy">` +
-        `<span class="img-label">Opcao ${escapeHtml(index + 1)} - ${escapeHtml(image.credit)}</span>` +
+        `<img class="img-main" src="${escapeHtml(image.url)}" alt="${escapeHtml(alt)}" loading="lazy">` +
+        '<span class="crop-previews" aria-hidden="true">' +
+          `<span class="crop-preview ${desktopClass}" style="aspect-ratio:${escapeHtml(desktopAspect)}">` +
+            `<img src="${escapeHtml(image.url)}" alt="" loading="lazy">` +
+            '<span>desktop</span>' +
+          '</span>' +
+          `<span class="crop-preview crop-mobile crop-original" style="aspect-ratio:${escapeHtml(originalAspect)}">` +
+            `<img src="${escapeHtml(image.url)}" alt="" loading="lazy">` +
+            '<span>mobile</span>' +
+          '</span>' +
+        '</span>' +
+        `<span class="img-label">${escapeHtml(label)} - ${escapeHtml(image.credit)}</span>` +
         `<span class="img-status">${escapeHtml(image.status)}</span>` +
+        (srcLink ? `<a href="${escapeHtml(srcLink)}" target="_blank" rel="noopener noreferrer" class="img-src">Ver origem</a>` : "") +
       "</label>"
     );
   }).join("");
@@ -372,7 +547,13 @@ h2{font-size:1.35rem;font-weight:900;line-height:1.2;margin-bottom:.45rem;word-b
 .img-option:hover{transform:translateY(-1px)}
 .img-option input{height:0;opacity:0;position:absolute;width:0}
 .img-option:has(input:checked){border-color:var(--yellow);box-shadow:0 0 0 2px rgba(240,198,70,.25)}
-.img-option img{background:#050505;display:block;height:142px;object-fit:cover;width:100%}
+.img-option .img-main{background:#050505;display:block;height:142px;object-fit:cover;width:100%}
+.crop-previews{display:grid;gap:4px;grid-template-columns:1fr 1fr;padding:5px 5px 0}
+.crop-preview{background:#050505;border:1px solid #302625;border-radius:5px;display:block;overflow:hidden;position:relative}
+.crop-preview img{display:block;height:100%;object-fit:contain;width:100%}
+.crop-cut img{object-fit:cover}
+.crop-preview span{background:rgba(0,0,0,.68);bottom:0;color:#d8cfcc;font-size:.55rem;font-weight:850;left:0;letter-spacing:.05em;line-height:1;padding:.18rem .28rem;position:absolute;text-transform:uppercase}
+.img-src{color:var(--text-dim);display:inline-block;font-size:.65rem;margin-top:.25rem;padding:0 .25rem;text-decoration:underline}
 .img-label{color:#c7bbb8;display:block;font-size:.7rem;line-height:1.25;padding:.45rem .45rem .1rem}
 .img-status{color:#8f8582;display:block;font-size:.66rem;line-height:1.2;padding:0 .45rem .45rem;text-transform:uppercase}
 .decision-bar{align-items:center;border-top:1px solid var(--line);display:flex;gap:.75rem;justify-content:space-between;margin-top:1rem;padding-top:.9rem}
@@ -381,7 +562,7 @@ h2{font-size:1.35rem;font-weight:900;line-height:1.2;margin-bottom:.45rem;word-b
 .decision-status{color:#d8cfcc;font-size:.82rem;font-weight:750;text-align:right}
 .footer{color:#666;font-size:.72rem;letter-spacing:.08em;margin-top:2rem;text-align:center;text-transform:uppercase}
 @media(max-width:680px){.approval-board,.decision-bar{align-items:stretch;flex-direction:column}.tool-btn,.decision-btn{width:100%}.decision-status{text-align:left}}
-@media(max-width:560px){.container{padding-inline:.75rem}.img-grid{grid-template-columns:1fr 1fr}.img-option img{height:120px}.status-pill{margin-left:0}}
+@media(max-width:560px){.container{padding-inline:.75rem}.img-grid{grid-template-columns:1fr 1fr}.img-option .img-main{height:120px}.status-pill{margin-left:0}}
 </style>
 </head>
 <body>
@@ -485,9 +666,10 @@ async function main() {
     if (!title) throw new Error(`Materia ${index + 1} sem titulo.`);
     const text = validateText(source, index);
     const slug = slugify(source.slug || title, `materia-${index + 1}`);
+    const itemNumber = Number(source.num || source.numero || index + 1);
     const imageOptions = await buildImageOptions(source, inputDir, imagesDir, `${String(index + 1).padStart(2, "0")}-${slug}`);
     outputItems.push({
-      num: index + 1,
+      num: Number.isFinite(itemNumber) && itemNumber > 0 ? itemNumber : index + 1,
       slug,
       title,
       line: itemLine(source),

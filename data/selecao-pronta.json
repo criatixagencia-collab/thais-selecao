@@ -1,192 +1,1205 @@
 {
-  "title": "Seleção de Pautas — 25/06/2026 (COMPLEMENTAR)",
-  "date": "2026-06-25",
+  "generatedAt": "2026-07-22T13:26:00Z",
   "items": [
     {
-      "num": 1,
-      "title": "Ex-BBB Nego Di é condenado a 14 anos de prisão por estelionato e lavagem de dinheiro",
+      "num": 3,
+      "title": "Filhos de Marisa Monte acompanham cantora em rara aparição na USP",
       "category": "Famosos",
-      "line": "Justiça condena o humorista e ex-participante do BBB21 por crimes cometidos com rifas falsas",
-      "body": "O ex-BBB e humorista Nego Di, conhecido por sua participação no Big Brother Brasil 21, foi condenado a 14 anos de prisão pelos crimes de estelionato e lavagem de dinheiro. A decisão é da Justiça do Rio Grande do Sul, após investigação que apontou que o influenciador utilizava rifas falsas para lesar seguidores nas redes sociais.\n\nDe acordo com a denúncia do Ministério Público, Nego Di realizava sorteios fraudulentos de produtos de alto valor, como carros e eletrodomésticos, que nunca eram entregues aos vencedores. O esquema teria movimentado valores milionários e lesado dezenas de vítimas em diferentes estados brasileiros.\n\nA defesa do ex-BBB afirmou que vai recorrer da sentença e que Nego Di é inocente. Nas redes sociais, a condenação rapidamente se tornou um dos assuntos mais comentados, gerando debates sobre a responsabilidade de influenciadores digitais.\n\nO caso ganhou ainda mais repercussão por se tratar de uma figura pública que construiu sua carreira na internet após o reality show, levantando questões sobre a atuação de criadores de conteúdo quando envolvem transações financeiras com seguidores.",
-      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
+      "line": "Mano Wladimir e Helena estiveram com a artista durante homenagem realizada na Faculdade de Direito da Universidade de São Paulo.",
+      "body": "Marisa Monte foi homenageada na Faculdade de Direito da USP, em São Paulo, e chamou atenção também por uma presença familiar pouco comum em eventos públicos. A cantora, de 59 anos, esteve acompanhada dos filhos Mano Wladimir, de 23, e Helena, de 17, durante a cerimônia realizada no Salão Nobre da instituição, no Largo São Francisco.\n\nA aparição dos dois movimentou a cobertura de celebridades justamente por ser rara. Marisa costuma manter a vida pessoal longe da exposição, enquanto sua trajetória artística segue marcada por reconhecimento público, discos importantes e forte presença na música brasileira. O registro da homenagem reforça esse encontro entre carreira, memória afetiva e família.\n\nNa apuração inicial, a informação central aparece confirmada por cobertura do F5/Folha e por publicação da Revista Quem sobre a cerimônia. Antes de publicação, vale checar se a USP divulgou nota oficial ou registro institucional da homenagem, especialmente para detalhar o motivo exato do reconhecimento recebido pela cantora.",
+      "sources": [
+        {
+          "label": "F5/Folha - Filhos de Marisa Monte surgem em rara aparição na USP",
+          "url": "https://f5.folha.uol.com.br/celebridades/2026/07/filhos-de-marisa-monte-surgem-em-rara-aparicao-na-usp.shtml"
+        },
+        {
+          "label": "Revista Quem - Marisa Monte recebe homenagem na presença dos dois filhos",
+          "url": "https://revistaquem.globo.com/noticias/noticia/2026/07/marisa-monte-recebe-homenagem-na-presenca-dos-dois-filhos.ghtml"
+        }
+      ],
+      "alert": "Baixo risco. Evitar detalhar vida familiar além do que foi divulgado publicamente.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "credito": "Foto: Cecília Bastos/USP Imagens / Domínio público",
+          "credit": "Foto: Cecília Bastos/USP Imagens / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_(Marisa_Monte).jpg",
+          "credito": "Foto: Governo do Estado de São Paulo / CC BY 2.0",
+          "credit": "Foto: Governo do Estado de São Paulo / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_(Marisa_Monte).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marisa_Monte.jpg",
+          "credito": "Foto: Otávio Vinhal / CC BY 4.0",
+          "credit": "Foto: Otávio Vinhal / CC BY 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Marisa_Monte.jpg",
+          "label": "Opção 3"
+        }
+      ],
       "imgs": [
         {
-          "url": "imgs-compl/amado.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/1/19/Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "credito": "Foto: Cecília Bastos/USP Imagens / Domínio público",
+          "credit": "Foto: Cecília Bastos/USP Imagens / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Marisa-Monte_191-23_Foto-Cecilia-Bastos_USP-Imagens-01.jpg",
+          "label": "Opção 1"
         },
         {
-          "url": "imgs-compl/galvao.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_%28Marisa_Monte%29.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_(Marisa_Monte).jpg",
+          "credito": "Foto: Governo do Estado de São Paulo / CC BY 2.0",
+          "credit": "Foto: Governo do Estado de São Paulo / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:2023-09-26_Cerim%C3%B4nia_de_Posse_de_Ludhmila_Hajjar_como_Diretora_Titular_de_Cl%C3%ADnica_M%C3%A9dica_da_Faculdade_de_Medicina_da_USP_01_(Marisa_Monte).jpg",
+          "label": "Opção 2"
         },
         {
-          "url": "imgs-compl/sabrina.png",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marisa_Monte.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marisa_Monte.jpg",
+          "credito": "Foto: Otávio Vinhal / CC BY 4.0",
+          "credit": "Foto: Otávio Vinhal / CC BY 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Marisa_Monte.jpg",
+          "label": "Opção 3"
         }
-      ]
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
     },
     {
-      "num": 5,
-      "title": "Ana Paula Renault vence Adrilles Jorge na Justiça após ofensas e perseguição",
+      "num": 4,
+      "title": "Angélica cobra educação ao comentar novo caso de importunação sexual",
       "category": "Famosos",
-      "line": "Ex-BBBs se enfrentam judicialmente desde 2016; Justiça decide favorável a Ana Paula",
-      "body": "A ex-BBB Ana Paula Renault venceu mais uma batalha judicial contra o também ex-BBB Adrilles Jorge. A Justiça de São Paulo proferiu decisão favorável a Ana Paula em processo que envolve ofensas e perseguição nas redes sociais, uma disputa que se arrasta desde a participação dos dois no Big Brother Brasil 16.\n\nAdrilles teria feito diversas postagens com teor ofensivo contra Ana Paula ao longo dos anos, incluindo comentários misóginos e persecutórios. Ana Paula, que já venceu outras ações contra o ex-colega de reality, busca reparação pelos danos sofridos.\n\nA briga entre os dois começou ainda dentro do BBB16, em 2016, quando protagonizaram fortes discussões. Desde então, mantêm relação hostil publicamente, com trocas de acusações nas redes sociais e nos tribunais.\n\nEsta não é a primeira condenação de Adrilles. Em 2022, ele já havia sido condenado a pagar indenização a Ana Paula por danos morais. A nova decisão determina que ele se abstenha de novas ofensas sob pena de multa, reacendendo o debate sobre assédio digital entre figuras públicas.",
-      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
+      "line": "Apresentadora afirmou que a punição é necessária, mas insuficiente, e relacionou a violência contra mulheres à formação dos homens.",
+      "body": "Angélica usou as redes sociais para comentar um novo caso de importunação sexual e defendeu que o enfrentamento à violência contra mulheres precisa ir além da punição. A apresentadora afirmou que episódios do tipo se repetem diariamente e questionou a educação dada aos homens, em uma manifestação publicada na terça-feira, 21 de julho.\n\nA fala ocorreu após a repercussão de um caso registrado em uma academia de condomínio na Bahia, em que um estudante foi flagrado se masturbando enquanto observava uma moradora. No texto publicado nas redes, Angélica disse ser impossível ver mais um episódio de importunação sem sentir indignação e afirmou que a sociedade precisa discutir a origem desse comportamento.\n\nComo se trata de pauta ligada a violência sexual, o texto deve ser conduzido com cuidado: o foco editorial é a manifestação pública de Angélica e o debate sobre educação e responsabilização, não a exploração do caso. A publicação só deve avançar com confirmação adequada do episódio original e sem expor a vítima.",
+      "sources": [
+        {
+          "label": "F5/Folha - Angélica cobra educação após importunação sexual",
+          "url": "https://f5.folha.uol.com.br/celebridades/2026/07/nao-basta-punir-diz-angelica-apos-novo-caso-de-importunacao-sexual.shtml"
+        }
+      ],
+      "alert": "Pauta sensível por envolver importunação sexual. Exige aprovação humana explícita antes de publicação.",
+      "statusEditorial": "aguardando aprovacao",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "credito": "Imagem: Multishow / CC BY 3.0",
+          "credit": "Imagem: Multishow / CC BY 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_001.jpg",
+          "credito": "Foto: BemDevassa / CC BY 2.0",
+          "credit": "Foto: BemDevassa / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_001.jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_cropped.jpg",
+          "credito": "Foto: Roberto Silva; recorte: Yanguas / CC BY-SA 3.0",
+          "credit": "Foto: Roberto Silva; recorte: Yanguas / CC BY-SA 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_cropped.jpg",
+          "label": "Opção 3"
+        }
+      ],
       "imgs": [
         {
-          "url": "imgs-compl/anapaula.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Ana Paula Renault",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "credito": "Imagem: Multishow / CC BY 3.0",
+          "credit": "Imagem: Multishow / CC BY 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_-_Lady_Night_2024.png",
+          "label": "Opção 1"
         },
         {
-          "url": "imgs-compl/amado.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Adrilles Jorge (ilustração)",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ang%C3%A9lica_001.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_001.jpg",
+          "credito": "Foto: BemDevassa / CC BY 2.0",
+          "credit": "Foto: BemDevassa / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_001.jpg",
+          "label": "Opção 2"
         },
         {
-          "url": "imgs-compl/galvao.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ang%C3%A9lica_cropped.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_cropped.jpg",
+          "credito": "Foto: Roberto Silva; recorte: Yanguas / CC BY-SA 3.0",
+          "credit": "Foto: Roberto Silva; recorte: Yanguas / CC BY-SA 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ang%C3%A9lica_cropped.jpg",
+          "label": "Opção 3"
         }
-      ]
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
     },
     {
       "num": 6,
-      "title": "CazéTV passa a ser investigada por publicidade abusiva de bets na Copa",
-      "category": "TV",
-      "line": "Canal de Casimiro pode ter violado regras de publicidade durante transmissão da Copa do Mundo",
-      "body": "A CazéTV, canal de streaming comandado por Casimiro Miguel, tornou-se alvo de investigação por suspeita de publicidade abusiva de plataformas de apostas online (bets) durante transmissão dos jogos da Copa do Mundo. O Ministério Público e órgãos reguladores de publicidade analisam se o canal violou normas que restringem propaganda de jogos de azar.\n\nA investigação aponta que a CazéTV teria promovido de forma excessiva sites de apostas durante as transmissões ao vivo, sem os devidos alertas sobre riscos. A legislação brasileira permite publicidade de bets desde que respeite limites éticos e inclua mensagens de conscientização sobre dependência.\n\nCaso comprovada a infração, o canal pode receber multas significativas e restrições na veiculação de propagandas. A CazéTV, fenômeno digital que cresceu rapidamente, tornou-se um dos principais veículos de transmissão esportiva na internet brasileira.\n\nO caso acirra ainda mais a disputa entre a CazéTV e a TV Globo, que já vinham trocando farpas indiretas sobre audiência e formato de cobertura da Copa. Enquanto a Globo adota postura mais tradicional, a CazéTV aposta no estilo informal, o que coloca em xeque os limites da publicidade em suas transmissões.",
-      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
+      "title": "Badauí transforma ativismo pela cannabis medicinal em nova frente de negócio",
+      "category": "Musica",
+      "line": "Vocalista do CPM 22 lançou linha de produtos em parceria com marca americana e diz que atuação nasceu de injustiças sociais.",
+      "body": "Badauí, vocalista do CPM 22, entrou no mercado de cannabis medicinal com uma linha de produtos assinada por ele em parceria com a marca americana Redwood Reserves. O músico afirmou que a iniciativa nasce de anos de ativismo e de uma percepção sobre injustiças sociais ligadas ao acesso a tratamentos e ao debate público sobre a planta.\n\nSegundo a reportagem do F5, os produtos seguem a legislação americana e, no Brasil, só podem ser adquiridos mediante prescrição médica e importação autorizada pela Anvisa. A pauta, portanto, não deve ser tratada como venda livre nem como campanha recreativa: o ponto central é a entrada de um artista brasileiro conhecido em um mercado regulado e ainda cercado de disputa pública.\n\nPara o ENTRETEU, o interesse está no cruzamento entre música, comportamento e mudança de posicionamento de artistas em negócios associados à saúde. Antes de publicação, a apuração deve confirmar os detalhes regulatórios no material da marca ou em orientação atualizada da Anvisa, evitando qualquer formulação que pareça recomendação médica.",
+      "sources": [
+        {
+          "label": "F5/Folha - Badauí, do CPM 22, afirma que ativismo pela cannabis nasceu de injustiças sociais",
+          "url": "https://f5.folha.uol.com.br/celebridades/2026/07/badaui-do-cpm-22-afirma-que-ativismo-pela-cannabis-nasceu-de-injusticas-sociais.shtml"
+        },
+        {
+          "label": "Veja - O primeiro artista brasileiro a lançar uma linha de cannabis",
+          "url": "https://veja.abril.com.br/saude/o-primeiro-artista-brasileiro-a-lancar-uma-linha-de-cannabis"
+        }
+      ],
+      "alert": "Tema de saúde/regulação. Não publicar como indicação de uso; manter linguagem factual.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badau%C3%AD_-_CPM_22.jpg",
+          "credito": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "credit": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Badau%C3%AD_-_CPM_22.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CPM22_(2480913815).jpg",
+          "credito": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "credit": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:CPM22_(2480913815).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CPM_22_(311693005).jpg",
+          "credito": "Foto: Jéssica Deki / CC BY-SA 2.0",
+          "credit": "Foto: Jéssica Deki / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:CPM_22_(311693005).jpg",
+          "label": "Opção 3"
+        }
+      ],
       "imgs": [
         {
-          "url": "imgs-compl/sabrina.png",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem ilustrativa",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Badau%C3%AD_-_CPM_22.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badau%C3%AD_-_CPM_22.jpg",
+          "credito": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "credit": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Badau%C3%AD_-_CPM_22.jpg",
+          "label": "Opção 1"
         },
         {
-          "url": "imgs-compl/galvao.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem ilustrativa",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ee/CPM22_%282480913815%29.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CPM22_(2480913815).jpg",
+          "credito": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "credit": "Foto: Cristian Janke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:CPM22_(2480913815).jpg",
+          "label": "Opção 2"
         },
         {
-          "url": "imgs-compl/amado.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem ilustrativa",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CPM_22_%28311693005%29.jpg",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CPM_22_(311693005).jpg",
+          "credito": "Foto: Jéssica Deki / CC BY-SA 2.0",
+          "credit": "Foto: Jéssica Deki / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:CPM_22_(311693005).jpg",
+          "label": "Opção 3"
         }
-      ]
-    },
-    {
-      "num": 7,
-      "title": "W.I.T.C.H. retorna com reboot que une nostalgia e novos desafios",
-      "category": "Filmes e Séries",
-      "line": "Clássico dos anos 2000 ganha nova versão em quadrinhos e animação",
-      "body": "W.I.T.C.H., a série de quadrinhos que marcou a infância e adolescência de milhares de jovens nos anos 2000, está de volta. As cinco Guardiãs — Will, Irma, Taranee, Cornelia e Hay Lin — retornam em um reboot que promete modernizar a história sem perder a essência que conquistou fãs ao redor do mundo.\n\nA nova fase incluirá tanto revistas em quadrinhos atualizadas quanto uma série de animação, com produção a cargo de estúdios que manterão o traço característico. A trama trará novos vilões e desafios para as Guardiãs do Coração.\n\nCriado por Elisabetta Gnone, W.I.T.C.H. foi um fenômeno editorial entre 2001 e 2012, vendendo milhões de exemplares em mais de 40 países. A série acompanhava cinco amigas que descobrem ter poderes mágicos ligados aos elementos da natureza.\n\nO reboot chega em momento de forte onda nostálgica. Ainda sem data oficial de estreia, a nova fase já é um dos lançamentos mais aguardados entre os fãs de cultura pop.",
-      "sources": "Fonte: Terra, UOL — consultado em 25/06/2026",
-      "imgs": [
-        {
-          "url": "https://www.youloveit.com/uploads/posts/2023-07/1690698609_youloveit_com_witch_reboot_book5.jpg",
-          "credit": "Reprodução/YouLoveIt",
-          "label": "W.I.T.C.H. reboot — novo livro",
-          "source": "YouLoveIt",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "https://www.youloveit.com/uploads/posts/2023-07/1690698586_youloveit_com_witch_reboot_book_novel2.jpg",
-          "credit": "Reprodução/YouLoveIt",
-          "label": "W.I.T.C.H. reboot — outro ângulo",
-          "source": "YouLoveIt",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "https://techprincess.it/wp-content/uploads/2023/10/witch-reboot-giunti.jpg",
-          "credit": "Reprodução/TechPrincess",
-          "label": "W.I.T.C.H. reboot — edição Giunti",
-          "source": "TechPrincess",
-          "status": "usar com cautela"
-        }
-      ]
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
     },
     {
       "num": 8,
-      "title": "Vingadores: Ultimato volta aos cinemas com novo título e cena inédita",
-      "category": "Filmes e Séries",
-      "line": "Marvel relança o blockbuster em formato estendido para reaquecer o público",
-      "body": "A Marvel anunciou o relançamento de Vingadores: Ultimato nos cinemas com um novo título e uma cena pós-créditos inédita. A estratégia, já usada pela Marvel em outras ocasiões, busca reengajar o público antes do lançamento do próximo filme dos Vingadores, previsto para 2027.\n\nO filme, originalmente lançado em 2019, arrecadou mais de US$ 2,7 bilhões mundialmente. A versão repaginada traz cenas adicionais e um final alternativo. A cena pós-créditos pode estabelecer conexões com o próximo capítulo da saga.\n\nA Marvel não revelou detalhes sobre a nova cena, mas especulações apontam para introdução de novos personagens ou retorno de heróis. O estúdio tem investido pesado na nova fase do Universo Cinematográfico Marvel.\n\nOs ingressos já começam a ser vendidos nas principais redes de cinema do Brasil, com sessões limitadas. Para os fãs brasileiros, a chance de ver o épico novamente na telona é uma oportunidade imperdível.",
-      "sources": "Fonte: Terra, Marvel Studios — consultado em 25/06/2026",
+      "title": "Glen Powell assume romance com Michelle Randolph em foto publicada nas redes",
+      "category": "Famosos",
+      "line": "Astro de Top Gun: Maverick e Twisters apareceu beijando a atriz em álbum do feriado da Independência dos Estados Unidos.",
+      "body": "Glen Powell tornou público o relacionamento com Michelle Randolph ao incluir uma foto de beijo em um álbum publicado nas redes sociais. O registro apareceu entre imagens do feriado da Independência dos Estados Unidos, celebrado em 4 de julho, e encerrou meses de especulações sobre o envolvimento dos dois.\n\nO ator, conhecido por Top Gun: Maverick e Twisters, mantém a vida pessoal relativamente discreta, o que ajudou a ampliar a repercussão da publicação. Michelle Randolph também é atriz, e o casal vinha sendo alvo de comentários antes da confirmação visual feita pelo próprio Powell.\n\nA pauta é leve e internacional, com bom apelo para cultura pop, mas depende da fonte original em rede social para ficar mais sólida. Na apuração disponível, o F5/Folha confirma a postagem e contextualiza o relacionamento. Para publicação, o ideal é abrir o post original e evitar afirmações além do que a imagem e a legenda sustentam.",
+      "sources": [
+        {
+          "label": "F5/Folha - Glen Powell assume romance com atriz Michelle Randolph",
+          "url": "https://f5.folha.uol.com.br/celebridades/2026/07/glen-powell-assume-romance-com-atriz-michelle-randolph-e-publica-foto-de-beijo-nas-redes.shtml"
+        }
+      ],
+      "alert": "Risco baixo. Evitar inferir planos do casal ou status além da publicação.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell.png",
+          "credito": "Foto: George W. Ford / CC BY-SA 4.0",
+          "credit": "Foto: George W. Ford / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "credito": "Foto: Jennifer 8. Lee / CC BY-SA 4.0",
+          "credit": "Foto: Jennifer 8. Lee / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "credito": "Foto: Gabriel Hutchinson / CC BY-SA 4.0",
+          "credit": "Foto: Gabriel Hutchinson / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "label": "Opção 3"
+        }
+      ],
       "imgs": [
         {
-          "url": "https://originalvintagemovieposters.com/wp-content/uploads/2024/07/AVENGERS-END-GAME-10980-scaled.jpg",
-          "credit": "Marvel Studios/Divulgação",
-          "label": "Vingadores: Ultimato — pôster oficial",
-          "source": "Marvel Studios",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "https://lumiere-a.akamaihd.net/v1/images/avengers_endgame_eng_p71_hd_2000x2818_961af0dc.png",
-          "credit": "Marvel Studios/Divulgação",
-          "label": "Vingadores: Ultimato — pôster oficial HD",
-          "source": "Marvel Studios (Disney)",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "imgs-compl/galvao.jpg",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Glen_Powell.png",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell.png",
+          "credito": "Foto: George W. Ford / CC BY-SA 4.0",
+          "credit": "Foto: George W. Ford / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "credito": "Foto: Jennifer 8. Lee / CC BY-SA 4.0",
+          "credit": "Foto: Jennifer 8. Lee / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell_Walking_CinemaCon_2025_04.jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/82/Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "credito": "Foto: Gabriel Hutchinson / CC BY-SA 4.0",
+          "credit": "Foto: Gabriel Hutchinson / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Glen_Powell_at_Top_Gun-_Maverick_premiere.jpg",
+          "label": "Opção 3"
         }
-      ]
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
     },
     {
-      "num": 9,
-      "title": "O Diabo Veste Prada 2 ganha data de estreia no Disney+",
-      "category": "Filmes e Séries",
-      "line": "Sequência do clássico de 2006 chega ao streaming; Meryl Streep e Anne Hathaway retornam",
-      "body": "A aguardada sequência de O Diabo Veste Prada finalmente tem data de estreia. O filme será lançado nos cinemas antes de chegar ao Disney+, reencontrando os personagens mais de 20 anos após o original. Meryl Streep, como a icônica Miranda Priestly, e Anne Hathaway, como Andrea Sachs, estão confirmadas no elenco.\n\nA produção foi anunciada pela Disney em 2024, mas os detalhes foram mantidos em sigilo. Agora, com a data revelada, os fãs podem contar os dias para rever a editora de moda da Runway. O roteiro acompanha Andrea em novo estágio da carreira, reencontrando Miranda em circunstâncias surpreendentes.\n\nO filme original, lançado em 2006, tornou-se um clássico cult. Baseado no livro de Lauren Weisberger, arrecadou mais de US$ 320 milhões mundialmente e rendeu a Meryl Streep uma indicação ao Oscar.\n\nA sequência chega em momento de forte apelo nostálgico. A estreia está prevista para o final de 2027, com lançamento no Disney+ semanas depois. Emily Blunt e Stanley Tucci também devem reprisar seus papéis.",
-      "sources": "Fonte: Terra, Disney — consultado em 25/06/2026",
+      "num": 11,
+      "title": "Repórter da Band relata racismo durante cobertura da final da Copa na Argentina",
+      "category": "TV",
+      "line": "William Talles contou que só percebeu a ofensa ao revisar o material gravado após reportagem em Buenos Aires.",
+      "body": "O repórter William Talles, da Band, relatou ter sido vítima de racismo durante a cobertura da final da Copa do Mundo na Argentina. O caso foi exibido no Jornal da Band, depois que o jornalista entrevistou um torcedor argentino após a derrota para a Espanha e ouviu uma fala racista diante da câmera.\n\nNa reportagem, Talles explicou que não percebeu a ofensa no momento da gravação. Ele disse que só entendeu o que havia ocorrido quando revisou o material no hotel e afirmou não saber se a fala era dirigida a ele, ao cinegrafista, que também é negro, ou ao Brasil. O jornalista classificou a situação como constrangedora e destacou a naturalidade com que o torcedor falou.\n\nA âncora Adriana Araújo também comentou o episódio no Jornal da Band e classificou a situação como inaceitável. Por envolver racismo, a pauta exige linguagem precisa, sem suavizar a gravidade do ato e sem transformar a agressão em entretenimento. O foco deve ser o relato do profissional, a exibição pela Band e a discussão pública sobre episódios recorrentes em coberturas esportivas.",
+      "sources": [
+        {
+          "label": "NaTelinha - Repórter da Band é vítima de racismo na Argentina",
+          "url": "https://natelinha.uol.com.br/televisao/2026/07/21/reporter-da-band-e-vitima-de-racismo-na-argentina-na-hora-nem-notei-245009.php"
+        },
+        {
+          "label": "Band - Repórter da Band sofre racismo durante cobertura na Argentina",
+          "url": "https://www.band.com.br/noticias/jornal-da-band/videos/reporter-da-band-sofre-racismo-durante-cobertura-na-argentina-202607202004"
+        }
+      ],
+      "alert": "Pauta sensível por envolver racismo. Exige aprovação humana explícita antes de publicação.",
+      "statusEditorial": "aguardando aprovacao",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Bandeirantes_2019_RBG.png",
+          "credito": "Imagem: Núcleo Arte e Criação Bandeirantes / Domínio público",
+          "credit": "Imagem: Núcleo Arte e Criação Bandeirantes / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Logo_Bandeirantes_2019_RBG.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Band_WC_2026_logo.webp",
+          "credito": "Imagem: .amrd24 / CC0",
+          "credit": "Imagem: .amrd24 / CC0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Band_WC_2026_logo.webp",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Band_4K_Logo.png",
+          "credito": "Imagem: Grupo Bandeirantes / Domínio público",
+          "credit": "Imagem: Grupo Bandeirantes / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Band_4K_Logo.png",
+          "label": "Opção 3"
+        }
+      ],
       "imgs": [
         {
-          "url": "https://posterspy.com/wp-content/uploads/2025/12/The-Devil-Wears-Prada-2.jpg",
-          "credit": "Disney/Divulgação",
-          "label": "O Diabo Veste Prada 2 — pôster",
-          "source": "Disney",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "https://image.tmdb.org/t/p/original/q1jDxJPCVlnrGI2phkxHuryl6Gn.jpg",
-          "credit": "Disney/Divulgação",
-          "label": "O Diabo Veste Prada 2 — cartaz",
-          "source": "Disney/TMDB",
-          "status": "usar com cautela"
-        },
-        {
-          "url": "imgs-compl/sabrina.png",
-          "credit": "Wikimedia Commons",
-          "label": "Imagem de arquivo",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_Bandeirantes_2019_RBG.png",
+          "fonte": "Wikimedia Commons",
           "source": "Wikimedia Commons",
-          "status": "usar com cautela"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_Bandeirantes_2019_RBG.png",
+          "credito": "Imagem: Núcleo Arte e Criação Bandeirantes / Domínio público",
+          "credit": "Imagem: Núcleo Arte e Criação Bandeirantes / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Logo_Bandeirantes_2019_RBG.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Band_WC_2026_logo.webp",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Band_WC_2026_logo.webp",
+          "credito": "Imagem: .amrd24 / CC0",
+          "credit": "Imagem: .amrd24 / CC0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Band_WC_2026_logo.webp",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/94/Band_4K_Logo.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Band_4K_Logo.png",
+          "credito": "Imagem: Grupo Bandeirantes / Domínio público",
+          "credit": "Imagem: Grupo Bandeirantes / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Band_4K_Logo.png",
+          "label": "Opção 3"
         }
-      ]
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 15,
+      "title": "Prime Video encomenda série reboot de RoboCop com oito episódios",
+      "category": "Filmes e Series",
+      "line": "Projeto da Amazon MGM Studios terá Peter Ocko como roteirista e showrunner e James Wan entre os produtores executivos.",
+      "body": "O Prime Video oficializou uma nova série de RoboCop, com encomenda de oito episódios. O projeto está em desenvolvimento desde a compra da MGM pela Amazon, em 2022, e agora avança como parte da estratégia do estúdio para explorar franquias conhecidas em cinema e televisão.\n\nDe acordo com a Variety, a premissa acompanha um grande conglomerado de tecnologia que convence uma cidade a colocar um robô poderoso na força policial, implantado com a consciência de um policial querido que morreu. Peter Ocko será roteirista, produtor executivo e showrunner, enquanto James Wan, Michael Clear e Rob Hackett entram na produção executiva pela Blumhouse Atomic Monster.\n\nA franquia RoboCop começou em 1987, no filme dirigido por Paul Verhoeven, e ganhou sequências, séries, animações, quadrinhos e jogos. O novo projeto tenta recolocar a marca em debate num momento em que tecnologia, vigilância e poder corporativo voltaram ao centro da cultura pop. Ainda não há data de estreia anunciada.",
+      "sources": [
+        {
+          "label": "Variety - Robocop Reboot Series Set at Prime Video",
+          "url": "https://variety.com/2026/tv/news/robocop-reboot-series-amazon-prime-video-1236817195/"
+        },
+        {
+          "label": "Omelete - RoboCop: série reboot da franquia é autorizada pela Amazon",
+          "url": "https://www.omelete.com.br/series-tv/robocop-serie-reboot-autorizada-amazon"
+        }
+      ],
+      "alert": "Baixo risco. Confirmar grafia oficial como RoboCop na etapa final.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robocop_1.png",
+          "credito": "Imagem: Orion Pictures / Domínio público",
+          "credit": "Imagem: Orion Pictures / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Robocop_1.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robocop_2014.png",
+          "credito": "Imagem: Metro-Goldwyn-Mayer / Domínio público",
+          "credit": "Imagem: Metro-Goldwyn-Mayer / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Robocop_2014.png",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:RoboCop.jpg",
+          "credito": "Foto: Karl Palutke / CC BY-SA 2.0",
+          "credit": "Foto: Karl Palutke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:RoboCop.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Robocop_1.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robocop_1.png",
+          "credito": "Imagem: Orion Pictures / Domínio público",
+          "credit": "Imagem: Orion Pictures / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Robocop_1.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robocop_2014.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robocop_2014.png",
+          "credito": "Imagem: Metro-Goldwyn-Mayer / Domínio público",
+          "credit": "Imagem: Metro-Goldwyn-Mayer / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Robocop_2014.png",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/de/RoboCop.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:RoboCop.jpg",
+          "credito": "Foto: Karl Palutke / CC BY-SA 2.0",
+          "credit": "Foto: Karl Palutke / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:RoboCop.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 16,
+      "title": "Warner confirma Supergirl e Duna: Parte 3 no calendário brasileiro de 2026",
+      "category": "Filmes e Series",
+      "line": "Estúdio apresentou datas de lançamentos no Brasil em evento que também incluiu Mortal Kombat 2 e Da Magia à Sedução 2.",
+      "body": "A Warner Bros. Pictures confirmou o calendário de lançamentos que levará aos cinemas brasileiros em 2026. Entre os destaques estão Supergirl, marcado para 25 de junho, e Duna: Parte 3, previsto para 17 de dezembro. As datas foram apresentadas em evento do estúdio e reunidas em lista divulgada pelo Omelete.\n\nO pacote também inclui O Morro dos Ventos Uivantes, A Noiva!, Eles Vão te Matar, A Múmia, Mortal Kombat 2, Animal Friends, Cut Off, Flowervale Street, Cara de Barro, Da Magia à Sedução 2, Remain e O Gatola na Cartola. Para o público de franquias, os dois títulos mais fortes são Supergirl, dentro da nova fase da DC, e Duna: Parte 3, sequência da saga de Denis Villeneuve.\n\nSupergirl terá Milly Alcock como protagonista, com Craig Gillespie na direção e roteiro de Ana Nogueira. O longa é descrito como um épico de ficção científica baseado na fase A Mulher do Amanhã, das HQs da DC. A pauta é forte para cultura pop porque junta calendário nacional, franquias grandes e expectativa de bilheteria.",
+      "sources": [
+        {
+          "label": "Omelete - Warner confirma estreias de 2026",
+          "url": "https://www.omelete.com.br/filmes/supergirl-duna-3-e-mais-warner-confirma-estreias-de-2026"
+        }
+      ],
+      "alert": "Risco baixo. Antes de publicar, confirmar se as datas continuam sem alteração no calendário oficial do estúdio.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warner_Bros._logo_2023.svg",
+          "credito": "Imagem: Warner Bros. Entertainment / Domínio público",
+          "credit": "Imagem: Warner Bros. Entertainment / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Warner_Bros._logo_2023.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Supergirl_(Arrowverse_television_series)_logo.svg",
+          "credito": "Imagem: DC Entertainment / Domínio público",
+          "credit": "Imagem: DC Entertainment / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Supergirl_(Arrowverse_television_series)_logo.svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_part_three_title_with_orange_awesome_background.jpg",
+          "credito": "Imagem: autor desconhecido / Domínio público",
+          "credit": "Imagem: autor desconhecido / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dune_part_three_title_with_orange_awesome_background.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warner_Bros._logo_2023.svg",
+          "credito": "Imagem: Warner Bros. Entertainment / Domínio público",
+          "credit": "Imagem: Warner Bros. Entertainment / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Warner_Bros._logo_2023.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supergirl_%28Arrowverse_television_series%29_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Supergirl_(Arrowverse_television_series)_logo.svg",
+          "credito": "Imagem: DC Entertainment / Domínio público",
+          "credit": "Imagem: DC Entertainment / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Supergirl_(Arrowverse_television_series)_logo.svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Dune_part_three_title_with_orange_awesome_background.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_part_three_title_with_orange_awesome_background.jpg",
+          "credito": "Imagem: autor desconhecido / Domínio público",
+          "credit": "Imagem: autor desconhecido / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dune_part_three_title_with_orange_awesome_background.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 17,
+      "title": "The Pitt lidera indicações ao Emmy 2026 com 25 menções",
+      "category": "Filmes e Series",
+      "line": "Drama médico da HBO Max aparece à frente de Hacks e Widow's Bay na corrida pela premiação.",
+      "body": "The Pitt chegou ao topo da lista de indicados ao Emmy 2026. O drama médico da HBO Max recebeu 25 indicações por sua segunda temporada, segundo levantamento divulgado pelo Omelete, e aparece como uma das produções favoritas para os principais prêmios da edição.\n\nNa relação de séries mais lembradas, The Pitt ficou à frente de Hacks, com 24 indicações, Widow's Bay, com 19, e Pluribus, com 18. A cerimônia está marcada para 14 de setembro. A força da série confirma a boa fase do drama médico, que já havia se destacado em edições anteriores e segue como uma das apostas centrais da HBO Max.\n\nCriada por R. Scott Gemmill, a produção tem Noah Wyle como o veterano Dr. Robby e acompanha um plantão de 15 horas distribuído em 15 episódios. A segunda temporada se passa durante o feriado de 4 de julho nos Estados Unidos, mantendo a proposta de tensão em tempo quase contínuo. A série está disponível na HBO Max.",
+      "sources": [
+        {
+          "label": "Omelete - The Pitt é a série com mais indicações ao Emmy 2026",
+          "url": "https://www.omelete.com.br/series-tv/the-pitt-serie-indicacoes-emmy-2026"
+        }
+      ],
+      "alert": "Baixo risco. Confirmar lista oficial antes da publicação final.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "credito": "Foto: Office of Representative Clark / Domínio público",
+          "credit": "Foto: Office of Representative Clark / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "credito": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "credit": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:International_Emmy_Awards_New_York_City.jpg",
+          "credito": "Foto: International Emmy Awards / CC BY-SA 4.0",
+          "credit": "Foto: International Emmy Awards / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:International_Emmy_Awards_New_York_City.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/89/Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "credito": "Foto: Office of Representative Clark / Domínio público",
+          "credit": "Foto: Office of Representative Clark / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Noah_Wyle_and_Representative_Katherine_Clark_on_Capitol_Hill_in_2025.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "credito": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "credit": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/dd/International_Emmy_Awards_New_York_City.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:International_Emmy_Awards_New_York_City.jpg",
+          "credito": "Foto: International Emmy Awards / CC BY-SA 4.0",
+          "credit": "Foto: International Emmy Awards / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:International_Emmy_Awards_New_York_City.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 18,
+      "title": "Netflix tem semana de estreias com vampiros, anime e drama inspirado em crime brasileiro",
+      "category": "Filmes e Series",
+      "line": "Entre 20 e 26 de julho, plataforma recebe novas temporadas e produções inéditas, incluindo Entrevista com Vampiro, Jujutsu Kaisen e Elize.",
+      "body": "A Netflix preparou uma semana movimentada para assinantes entre 20 e 26 de julho. A lista divulgada pelo Terra reúne cinco estreias no catálogo, com produções que passam por suspense, fantasia, anime, romance e drama inspirado em fatos reais. O pacote inclui Entrevista com Vampiro, Elize: Sombras de uma Mulher, Jujutsu Kaisen, Ransom Canyon e Meu Nome é Farah.\n\nO destaque mais pop é Entrevista com Vampiro, que chega com nova temporada centrada em Lestat de Lioncourt, agora disposto a narrar a própria versão dos acontecimentos enquanto assume uma persona de astro do rock. Já Jujutsu Kaisen retorna após os eventos do incidente de Shibuya, com Yuji Itadori e seus aliados envolvidos no Jogo do Abate.\n\nEntre os títulos brasileiros ou de maior repercussão nacional, Elize: Sombras de uma Mulher chama atenção por revisitar a trajetória de Elize Matsunaga em formato de suspense psicológico. A pauta funciona como serviço para o leitor, mas precisa confirmar disponibilidade no catálogo brasileiro da Netflix antes de ser fechada para publicação.",
+      "sources": [
+        {
+          "label": "Terra - Netflix: veja 5 filmes e séries que estreiam de 20 a 26 de julho de 2026",
+          "url": "https://www.terra.com.br/diversao/entre-telas/netflix-veja-5-filmes-e-series-que-estreiam-de-20-a-26-de-julho-de-2026,b5ac58e737d1cb7bfe7bd0f6d17ffc28mlplnmit.html"
+        }
+      ],
+      "alert": "Pauta de serviço. Checar catálogo no dia da publicação para evitar título indisponível.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_Logomark.png",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_Logomark.png",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_headquarters.jpg",
+          "credito": "Foto: Coolcaesar / CC BY-SA 3.0",
+          "credit": "Foto: Coolcaesar / CC BY-SA 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_headquarters.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Netflix_Logomark.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_Logomark.png",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_Logomark.png",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Netflix_headquarters.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_headquarters.jpg",
+          "credito": "Foto: Coolcaesar / CC BY-SA 3.0",
+          "credit": "Foto: Coolcaesar / CC BY-SA 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_headquarters.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 19,
+      "title": "Julho reúne Enola Holmes 3, X-Men '97 e Justiça 2 nos streamings",
+      "category": "Filmes e Series",
+      "line": "Guia de lançamentos lista novidades em Netflix, Disney+, Prime Video, Apple TV, Globoplay e HBO Max.",
+      "body": "Julho de 2026 tem um calendário cheio para quem acompanha streaming. O guia do AdoroCinema reúne estreias em plataformas como Netflix, Disney+, Prime Video, Apple TV, Globoplay e HBO Max, misturando franquias conhecidas, séries novas, filmes indicados ao Oscar e retornos de produções populares.\n\nEntre os destaques citados estão Enola Holmes 3, Uma Casa na Pradaria, A Voz de Hind Rajab, Entrevista com o Vampiro, Heartstopper Para Sempre e Ransom Canyon na Netflix. No Disney+, a lista traz X-Men '97, Descendentes: País das Maravilhas Malvado, Sou Luna: De Volta à Pista e O Diabo Veste Prada 2. Já o Prime Video aparece com Elle: Legalmente Loira, Devoradores de Estrelas e Hamnet: A Vida Antes de Hamlet.\n\nO Globoplay entra no calendário com Minha Menina, Justiça 2, Chicago Med e O Senhor das Moscas, enquanto a HBO Max aparece com A Casa do Dragão, Jujutsu Kaisen e Stuart Não Consegue Salvar o Universo. A pauta tem bom potencial de serviço, mas deve ser publicada com recorte mais enxuto, destacando apenas os títulos de maior apelo para o leitor brasileiro.",
+      "sources": [
+        {
+          "label": "AdoroCinema - Tudo o que vai estrear em julho de 2026 nos streamings",
+          "url": "https://www.adorocinema.com/noticias/filmes/noticia-1000213100/"
+        }
+      ],
+      "alert": "Checar disponibilidade no Brasil e corrigir eventuais divergências entre plataformas antes de publicar.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Disney%2B_logo.svg",
+          "credito": "Imagem: Disney Enterprises, Inc. / Domínio público",
+          "credit": "Imagem: Disney Enterprises, Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Disney%2B_logo.svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "credito": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "credit": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "credito": "Imagem: Netflix Inc. / Domínio público",
+          "credit": "Imagem: Netflix Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Disney%2B_logo.svg",
+          "credito": "Imagem: Disney Enterprises, Inc. / Domínio público",
+          "credit": "Imagem: Disney Enterprises, Inc. / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Disney%2B_logo.svg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b3/HBO_Max_%282025%29.svg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "credito": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "credit": "Imagem: Warner Bros. Discovery; vetorização: LucasJance2006 e Lee6597 / Domínio público",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:HBO_Max_(2025).svg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 22,
+      "title": "Primavera Sound São Paulo divulga divisão por dia e preços dos ingressos",
+      "category": "Musica",
+      "line": "Festival acontece em 5 e 6 de dezembro, no Autódromo de Interlagos, com The Strokes, Gorillaz, Lily Allen, FKA Twigs e Arca.",
+      "body": "O Primavera Sound São Paulo 2026 anunciou a divisão do line-up por dia e os valores dos ingressos. O festival será realizado nos dias 5 e 6 de dezembro, no Autódromo de Interlagos, em São Paulo, com The Strokes, Gorillaz e Lily Allen entre os principais nomes da programação. A produtora colombiana Arca também foi confirmada como destaque do segundo dia.\n\nSegundo o G1, a pré-venda começa em 23 de julho para clientes Cartões BB Visa elegíveis, com 15% de desconto sobre o passaporte. A venda geral está prevista para 28 de julho, pela Ingresse. Os ingressos de venda geral custam R$ 1.530 a inteira do Primavera Pass para os dois dias, R$ 850,50 a inteira do Primavera Day e R$ 2.050,50 a inteira da Área VIP, com opções de meia e solidária.\n\nNo sábado, 5 de dezembro, o line-up inclui The Strokes, FKA Twigs, Lily Allen, CMAT, Courtney Barnett, Zé Ibarra, Black Pantera e Johnny Hooker, entre outros. No domingo, 6, a programação traz Gorillaz, Arca, Yung Lean, Duquesa, Gaby Amarantos, Ebony, Ana Frango Elétrico, Julia Mestre e Melly. A pauta é forte por reunir serviço, música internacional e artistas brasileiros relevantes.",
+      "sources": [
+        {
+          "label": "G1 - Primavera Sound São Paulo 2026 anuncia divisão por dia e ingressos",
+          "url": "https://g1.globo.com/pop-arte/musica/noticia/2026/07/21/primavera-sound-sao-paulo-2026-anuncia-divisao-por-dia-e-ingressos-veja-precos.ghtml"
+        },
+        {
+          "label": "Billboard Brasil - Gorillaz e The Strokes são headliners do Primavera Sound São Paulo",
+          "url": "https://billboard.com.br/gorillaz-the-strokes-primavera-sound-sao-paulo-2026/"
+        }
+      ],
+      "alert": "Baixo risco. Conferir preços e datas de venda imediatamente antes de publicar.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Primavera_Sound_Lotus_stage.jpg",
+          "credito": "Foto: Jwslubbock / CC BY-SA 4.0",
+          "credit": "Foto: Jwslubbock / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Primavera_Sound_Lotus_stage.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorillaz_(Best_Kept_Secret_2026).jpg",
+          "credito": "Foto: Haggis MacHaggis / CC BY-SA 4.0",
+          "credit": "Foto: Haggis MacHaggis / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gorillaz_(Best_Kept_Secret_2026).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TheStrokes.jpg",
+          "credito": "Foto: Matt / CC BY-SA 2.0",
+          "credit": "Foto: Matt / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:TheStrokes.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Primavera_Sound_Lotus_stage.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Primavera_Sound_Lotus_stage.jpg",
+          "credito": "Foto: Jwslubbock / CC BY-SA 4.0",
+          "credit": "Foto: Jwslubbock / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Primavera_Sound_Lotus_stage.jpg",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gorillaz_%28Best_Kept_Secret_2026%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorillaz_(Best_Kept_Secret_2026).jpg",
+          "credito": "Foto: Haggis MacHaggis / CC BY-SA 4.0",
+          "credit": "Foto: Haggis MacHaggis / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gorillaz_(Best_Kept_Secret_2026).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/TheStrokes.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TheStrokes.jpg",
+          "credito": "Foto: Matt / CC BY-SA 2.0",
+          "credit": "Foto: Matt / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:TheStrokes.jpg",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
+    },
+    {
+      "num": 23,
+      "title": "Martinho da Vila e Mart'nália fazem show da turnê Pai e Filha em São Paulo",
+      "category": "Musica",
+      "line": "Apresentação no Espaço Unimed marca encontro de gerações e integra a última grande turnê de Martinho da Vila.",
+      "body": "Martinho da Vila e Mart'nália se apresentam juntos em São Paulo com a turnê Pai e Filha. O show está marcado para 25 de julho de 2026, às 21h, no Espaço Unimed, na Barra Funda. A proposta reúne clássicos de Martinho, sucessos de Mart'nália e duetos preparados para celebrar a relação familiar e musical dos dois artistas.\n\nO material oficial da Ticketmaster apresenta o projeto como a última grande turnê de Martinho da Vila e a primeira turnê completa feita por pai e filha. A turnê coloca no palco dois nomes centrais do samba: Martinho como compositor, cantor e escritor que atravessou gerações, e Mart'nália como artista de trajetória própria, marcada por samba, MPB e forte presença cênica.\n\nAlém do valor afetivo, a pauta tem força cultural por tratar de legado, memória e continuidade na música brasileira. O serviço confirmado inclui abertura dos portões às 19h, classificação de 18 anos e venda pela Ticketmaster, com bilheteria oficial sem taxa de serviço no Shopping Ibirapuera e atendimento no Espaço Unimed no dia do show.",
+      "sources": [
+        {
+          "label": "Ticketmaster - Martinho da Vila & Mart'nália: Pai e Filha em São Paulo",
+          "url": "https://www.ticketmaster.com.br/event/martinho-da-vila-martnalia-pai-e-filha-sao-paulo"
+        },
+        {
+          "label": "G1 - Martinho da Vila anuncia última grande turnê pelo Brasil",
+          "url": "https://g1.globo.com/guia/guia-rj/noticia/2026/05/25/a-energia-deles-me-energiza-aos-88-anos-martinho-da-vila-anuncia-ultima-grande-turne-pelo-brasil.ghtml"
+        }
+      ],
+      "alert": "Baixo risco. Confirmar disponibilidade de ingressos antes de publicar como serviço.",
+      "statusEditorial": "rascunho preparado",
+      "imagens": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "credito": "Imagem: Humor Multishow / CC BY 3.0",
+          "credit": "Imagem: Humor Multishow / CC BY 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Mart%27n%C3%A1lia_(cropped).jpg",
+          "credito": "Foto: Ministério da Cultura / CC BY 2.0",
+          "credit": "Foto: Ministério da Cultura / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:2010_Mart%27n%C3%A1lia_(cropped).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "srcLocal": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "urlOriginal": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "fonte": "G1",
+          "source": "G1",
+          "sourceUrl": "https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2026/06/01/martinho-da-vila-e-martnalia-cantam-mais-separados-do-que-juntos-ao-longo-do-roteiro-do-show-da-turne-pai-e-filha.ghtml",
+          "credito": "Foto: Patrick Gomes / Divulgação",
+          "credit": "Foto: Patrick Gomes / Divulgação",
+          "status": "usar com cautela",
+          "pagina": "https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2026/06/01/martinho-da-vila-e-martnalia-cantam-mais-separados-do-que-juntos-ao-longo-do-roteiro-do-show-da-turne-pai-e-filha.ghtml",
+          "label": "Opção 3"
+        }
+      ],
+      "imgs": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "credito": "Imagem: Humor Multishow / CC BY 3.0",
+          "credit": "Imagem: Humor Multishow / CC BY 3.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Martinho_da_Vila_at_Os_Suburbanos_by_Humor_Multishow_in_2019.png",
+          "label": "Opção 1"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "srcLocal": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010_Mart%27n%C3%A1lia_%28cropped%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Mart%27n%C3%A1lia_(cropped).jpg",
+          "credito": "Foto: Ministério da Cultura / CC BY 2.0",
+          "credit": "Foto: Ministério da Cultura / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:2010_Mart%27n%C3%A1lia_(cropped).jpg",
+          "label": "Opção 2"
+        },
+        {
+          "url": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "srcLocal": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "urlOriginal": "selecao-20260722-1029/imagens/martinho-da-vila-e-m-0.jpg",
+          "fonte": "G1",
+          "source": "G1",
+          "sourceUrl": "https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2026/06/01/martinho-da-vila-e-martnalia-cantam-mais-separados-do-que-juntos-ao-longo-do-roteiro-do-show-da-turne-pai-e-filha.ghtml",
+          "credito": "Foto: Patrick Gomes / Divulgação",
+          "credit": "Foto: Patrick Gomes / Divulgação",
+          "status": "usar com cautela",
+          "pagina": "https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2026/06/01/martinho-da-vila-e-martnalia-cantam-mais-separados-do-que-juntos-ao-longo-do-roteiro-do-show-da-turne-pai-e-filha.ghtml",
+          "label": "Opção 3"
+        }
+      ],
+      "statusImagem": "ok - há imagem licenciada/autorizada"
     }
   ]
 }

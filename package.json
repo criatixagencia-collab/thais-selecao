@@ -6,6 +6,7 @@
   "scripts": {
     "selection:interactive": "node scripts/gerar-selecao-interativa.cjs",
     "selection:validate": "node scripts/validar-selecao-interativa.cjs",
-    "selecao:publicar": "node scripts/publicar-selecao-interativa.cjs"
+    "selecao:publicar": "node scripts/publicar-selecao-interativa.cjs",
+    "imagens:multi": "node scripts/buscar-multi-opcoes.cjs"
   }
 }

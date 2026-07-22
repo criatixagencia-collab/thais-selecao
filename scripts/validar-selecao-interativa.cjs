@@ -8,6 +8,9 @@ const DEFAULT_MIN_IMAGES = Number(process.env.THAIS_MIN_IMAGES || 3);
 const DEFAULT_MIN_BODY_CHARS = Number(process.env.THAIS_MIN_BODY_CHARS || 800);
 const DEFAULT_MIN_PARAGRAPHS = Number(process.env.THAIS_MIN_PARAGRAPHS || 3);
 
+// Regra de evolucao do Regimento 03: bug objetivo e repetivel vira validacao aqui,
+// nao paragrafo novo no regimento.
+
 function parseArgs(argv) {
   const args = {
     dir: "",
@@ -85,6 +88,77 @@ function bodyToParagraphs(body) {
     .filter(Boolean);
 }
 
+function normalizeForCheck(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function hasFactualAnchor(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const factualPatterns = [
+    /\b(nesta|neste|naquela|naquele|agora|hoje|amanha|ontem)\b/,
+    /\b(segundo|de acordo com|conforme|afirmou|disse|contou|informou|anunciou|confirmou|revelou)\b/,
+    /\b(sera|foi|acontece|acontecera|comeca|comecou|termina|terminou|estreia|estreou|volta|retorna|chega|lanca|lancou)\b/,
+    /\b(janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\b/,
+    /\b\d{4}\b/,
+    /\b(instagram|youtube|globoplay|netflix|max|disney\+|prime video|record|globo|sbt|uol|cnn)\b/,
+    /\b(praia|hospital|tribunal|palco|turne|show|festival|cerimonia|gravidez|gestacao|licenca-maternidade|licenca maternidade)\b/,
+  ];
+  return factualPatterns.some((pattern) => pattern.test(text));
+}
+
+function isAbstractClosing(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const abstractPatterns = [
+    /centro da conversa/,
+    /movimenta a conversa/,
+    /movimenta o debate/,
+    /contexto pessoal importante/,
+    /novo momento/,
+    /nova fase/,
+    /fase atual/,
+    /fase artistica/,
+    /funciona como vitrine/,
+    /vitrine para/,
+    /dialogo com o publico/,
+    /dialoga com o publico/,
+    /estrategic/,
+    /circulacao ampla/,
+    /reposicionamento/,
+    /ganha forca nas redes/,
+    /reacende a atencao/,
+    /recoloca .* no centro/,
+    /ajuda a dimensionar/,
+    /ajuda a ampliar/,
+    /protagonista/,
+  ];
+  return abstractPatterns.some((pattern) => pattern.test(text));
+}
+
+function hasHardBannedClosing(paragraph) {
+  const text = normalizeForCheck(paragraph);
+  const hardBannedPatterns = [
+    /centro da conversa/,
+    /contexto pessoal importante/,
+    /viver esse novo momento/,
+    /recoloca .* no centro/,
+    /funciona como vitrine/,
+    /compromisso pontual, mas estrategic/,
+    /ajuda a ampliar o dialogo/,
+    /ajuda a dimensionar/,
+    /^por enquanto\b/,
+    /^ate aqui\b/,
+    /^o que esta confirmado\b/,
+    /^o que fica confirmado\b/,
+    /^neste momento,? o que esta confirmado\b/,
+    /^os registros .* circularam/,
+    /^com o .* (liberado|divulgado|oficializado|definido)/,
+  ];
+  return hardBannedPatterns.some((pattern) => pattern.test(text));
+}
+
 function imageMagic(buffer) {
   if (buffer.length >= 3 && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) return "jpeg";
   if (
@@ -107,6 +181,10 @@ function fail(errors, message) {
   errors.push(message);
 }
 
+function expectedOptionLabel(index) {
+  return `Opcao ${index + 1}`;
+}
+
 function validateSelection(dir, args) {
   const errors = [];
   const indexPath = path.join(dir, "index.html");
@@ -126,6 +204,12 @@ function validateSelection(dir, args) {
   }
   if (/Instagram via Apify|Verificar via Apify|pendente de imagem|Getty Images\/Emmys|src=['"]{2}/i.test(html)) {
     fail(errors, `${label}: HTML contem promessa de imagem sem miniatura real.`);
+  }
+  if (/crop-mobile\s+crop-cut/i.test(html)) {
+    fail(errors, `${label}: preview mobile nao deve cortar; precisa manter a proporcao original da imagem.`);
+  }
+  if (/\.crop-(desktop|mobile)\{[^}]*aspect-ratio:/i.test(html)) {
+    fail(errors, `${label}: proporcao de preview nao deve ser fixa no CSS; use aspect-ratio inline por imagem.`);
   }
 
   let data;
@@ -150,6 +234,18 @@ function validateSelection(dir, args) {
         `${label}: texto curto em "${title}" (${String(body).length} caracteres, ${paragraphs.length} paragrafos).`,
       );
     }
+    const lastParagraph = paragraphs[paragraphs.length - 1] || "";
+    if (lastParagraph && hasHardBannedClosing(lastParagraph)) {
+      fail(
+        errors,
+        `${label}: fechamento proibido em "${title}". O ultimo paragrafo usa formula ornamental banida pelo regimento.`,
+      );
+    } else if (lastParagraph && isAbstractClosing(lastParagraph) && !hasFactualAnchor(lastParagraph)) {
+      fail(
+        errors,
+        `${label}: fechamento abstrato em "${title}". O ultimo paragrafo precisa encerrar com fato, estado atual, proximo passo ou fala verificavel.`,
+      );
+    }
 
     const images = Array.isArray(item.imageOptions) ? item.imageOptions : [];
     if (images.length < args.minImages) {
@@ -160,16 +256,85 @@ function validateSelection(dir, args) {
     for (const [imageIndex, image] of images.entries()) {
       const imageLabel = `${title} / imagem ${imageIndex + 1}`;
       const url = image.url || image.src || image.imageUrl || "";
+      const expectedLabel = expectedOptionLabel(imageIndex);
       if (!url) {
         fail(errors, `${label}: ${imageLabel} sem url/src.`);
         continue;
+      }
+      if ((image.label || "") !== expectedLabel) {
+        fail(errors, `${label}: ${imageLabel} com label invalido no data.json ("${image.label || ""}"; esperado "${expectedLabel}").`);
+      }
+      if (Number(image.optionNumber) !== imageIndex + 1) {
+        fail(errors, `${label}: ${imageLabel} com optionNumber invalido no data.json (${image.optionNumber}; esperado ${imageIndex + 1}).`);
       }
       if (/^https?:\/\//i.test(url)) {
         if (!args.allowRemote) fail(errors, `${label}: ${imageLabel} ainda usa hotlink remoto (${url}).`);
         continue;
       }
       if (!image.credit && !image.credito) fail(errors, `${label}: ${imageLabel} sem credito.`);
+      if (/^Foto:\s*arquivo\s*\(/i.test(image.credit || image.credito || "")) {
+        fail(errors, `${label}: ${imageLabel} usa credito generico proibido ("${image.credit || image.credito}").`);
+      }
+      if (/^Credito nao confirmado - revisar pagina de origem/i.test(image.credit || image.credito || "")) {
+        fail(errors, `${label}: ${imageLabel} esta com credito nao confirmado; revisar pagina de origem antes de publicar.`);
+      }
+
+      // --- Direito autoral da fotografia (Lei 9.610/98, arts. 24 II e 79 §1) ---
+      // Crédito precisa identificar AUTOR (fotógrafo, agência ou licença nomeada).
+      // Ver secao "Direito autoral da fotografia" no AGENTS.md.
+      const creditoRaw = String(image.credit || image.credito || "").trim();
+      const creditoTexto = creditoRaw.replace(/^\s*(foto|fotos|arte|grafico|gráfico|imagem|logo)s?\s*:\s*/i, "").trim();
+
+      // 1. Generico puro: "Divulgacao", "Reproducao", "Internet", "Arquivo"
+      const GENERICO_PURO = /^(divulga[cç][aã]o|reprodu[cç][aã]o|internet|arquivo|acervo|montagem)$/i;
+      if (GENERICO_PURO.test(creditoTexto)) {
+        fail(errors, `${label}: ${imageLabel} usa credito generico sem autoria ("${creditoRaw}"). Lei 9.610/98 exige identificacao do autor.`);
+      }
+
+      // 2. Generico + veiculo, sem fotografo: "Divulgacao/Globo", "Reproducao/Lionsgate"
+      const GENERICO_COM_VEICULO = /^(divulga[cç][aã]o|reprodu[cç][aã]o)\s*[\/\-–|]\s*[\w\s.&]+$/i;
+      const TEM_LICENCA = /(CC[ -]?(BY|0)|creative commons|dominio publico|domínio público|public domain)/i;
+      if (GENERICO_COM_VEICULO.test(creditoTexto) && !TEM_LICENCA.test(creditoRaw)) {
+        fail(errors, `${label}: ${imageLabel} credita veiculo, nao autor ("${creditoRaw}"). Emissora/portal nao e fotografo; usar nome do fotografo, agencia ou licenca.`);
+      }
+
+      // 3. Legenda/titulo colado no campo de credito
+      const PARECE_LEGENDA = creditoTexto.length > 120
+        || /[?!]/.test(creditoTexto)
+        || /\b(far[aã]o|ser[aá]|comandam|celebra|re[uú]ne|apresenta|estreia|conta|mostra)\b/i.test(creditoTexto);
+      if (PARECE_LEGENDA) {
+        fail(errors, `${label}: ${imageLabel} tem legenda/titulo no lugar do credito ("${creditoRaw.slice(0, 70)}..."). Preencher com autoria real.`);
+      }
+
       if (!image.status) fail(errors, `${label}: ${imageLabel} sem status de uso.`);
+
+      // 4. Status permitidos e trava da imagem principal (Opcao 1)
+      const STATUS_OK = ["licenciada", "autorizada", "usar com cautela", "nao usar"];
+      const statusImg = String(image.status || "").trim().toLowerCase();
+      if (statusImg && !STATUS_OK.includes(statusImg)) {
+        fail(errors, `${label}: ${imageLabel} com status invalido ("${image.status}"). Permitidos: ${STATUS_OK.join(", ")}.`);
+      }
+      if (statusImg === "nao usar") {
+        fail(errors, `${label}: ${imageLabel} marcada como "nao usar" e nao pode ir para a selecao.`);
+      }
+      if (imageIndex === 0 && statusImg && !["licenciada", "autorizada"].includes(statusImg)) {
+        fail(errors, `${label}: ${imageLabel} e a imagem principal e esta como "${image.status}". Principal exige "licenciada" ou "autorizada".`);
+      }
+      const width = Number(image.width) || 0;
+      const height = Number(image.height) || 0;
+      if (width > 0 && height > 0) {
+        const orientation = image.orientation || (width >= height ? "horizontal" : "vertical");
+        const expectedDesktopClass = orientation === "vertical"
+          ? 'crop-preview crop-desktop crop-cut" style="aspect-ratio:16/9"'
+          : `crop-preview crop-desktop crop-original" style="aspect-ratio:${width}/${height}"`;
+        const expectedMobileClass = `crop-preview crop-mobile crop-original" style="aspect-ratio:${width}/${height}"`;
+        if (!html.includes(expectedDesktopClass)) {
+          fail(errors, `${label}: ${imageLabel} nao segue a regra de corte desktop (${orientation}).`);
+        }
+        if (!html.includes(expectedMobileClass)) {
+          fail(errors, `${label}: ${imageLabel} nao preserva a proporcao original no mobile.`);
+        }
+      }
 
       const imagePath = path.resolve(dir, url);
       if (!imagePath.startsWith(`${dir}${path.sep}`)) {
@@ -191,6 +356,9 @@ function validateSelection(dir, args) {
       }
       if (!html.includes(url)) {
         fail(errors, `${label}: ${imageLabel} existe no data.json, mas nao aparece no HTML.`);
+      }
+      if (!html.includes(`${expectedLabel} - ${image.credit || image.credito || ""}`)) {
+        fail(errors, `${label}: ${imageLabel} nao aparece no HTML com o label visual esperado (${expectedLabel}).`);
       }
     }
   }
