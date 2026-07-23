@@ -34,6 +34,7 @@ const ROOT = path.resolve(__dirname, "../..");
 const ALVO_PADRAO = Number(process.env.THAIS_ALVO_IMAGENS || 6);
 const MINIMO_PADRAO = Number(process.env.THAIS_MIN_IMAGES || 3);
 const MAX_CANDIDATAS = 9;
+const STATUS_PRINCIPAL_OK = new Set(["licenciada", "autorizada"]);
 
 function lerMapa(nomeArquivo) {
   try {
@@ -65,9 +66,44 @@ function planoVisual(artigo) {
     instagram: (bloco?.instagram || []).map(normalizarHandle).filter(Boolean).slice(0, 2),
     twitter: (bloco?.twitter || []).map(normalizarHandle).filter(Boolean).slice(0, 2),
     plataformaOficial: String(bloco?.plataformaOficial || "").trim(),
+    exigeImagemEspecifica: Boolean(bloco?.exigeImagemEspecifica),
   };
   if (!plano.entidades.length) plano.entidades = [titulo];
   return plano;
+}
+
+// Fontes que so conseguem trazer retrato/foto de arquivo generica da pessoa
+// ou do assunto — nunca a cena/foto especifica de um fato pontual (uma
+// festa, um look, um momento viral). Wikimedia Commons e busca por texto no
+// DuckDuckGo caem nessa categoria; Instagram/Twitter podem trazer o post
+// real do evento, entao ficam de fora da restricao.
+const FONTES_SEM_CENA_ESPECIFICA = ["Wikimedia Commons", "DuckDuckGo"];
+
+/**
+ * Materia cujo fato so faz sentido com a foto/cena especifica do momento
+ * (bug real: "Virginia e Vini Jr. transformam arraial particular em novo
+ * assunto das redes" nao pode ser ilustrada por um retrato de arquivo dos
+ * dois — precisa ser a foto da festa, ou nao publicar como imagem, so
+ * embed do post original). Fontes genericas ficam rebaixadas para "usar
+ * com cautela" (nunca principal, ver STATUS_PRINCIPAL_OK no builder da
+ * Etapa 5) e ganham observacao explicando o motivo.
+ */
+function restringirSeExigeImagemEspecifica(candidatas, exige) {
+  if (!exige) return candidatas;
+  return candidatas.map((c) => {
+    const generica = FONTES_SEM_CENA_ESPECIFICA.some((prefixo) => String(c.fonte || "").startsWith(prefixo));
+    if (!generica) return c;
+    return {
+      ...c,
+      status: "usar com cautela",
+      observacao: [
+        c.observacao,
+        "Materia depende da cena/foto especifica do fato (nao apenas uma foto da pessoa); esta candidata e generica " +
+          "(retrato de arquivo ou busca por texto), nao a foto do momento relatado — nao pode ser imagem principal. " +
+          "Buscar embed do post original do evento ou marcar pendencia.",
+      ].filter(Boolean).join(" "),
+    };
+  });
 }
 
 function dominiosDasFontes(artigo) {
@@ -211,12 +247,19 @@ async function buscarMultiOpcoes(artigo, { alvo = ALVO_PADRAO, minimo = MINIMO_P
 
   let opcoes = dedupe(intercalar([wiki.slice(0, 4), insta.slice(0, 3), twitter.slice(0, 2), ddg.slice(0, 4)]));
   opcoes = aplicarBloqueioFonteOriginal(opcoes, artigo).slice(0, MAX_CANDIDATAS);
+  opcoes = restringirSeExigeImagemEspecifica(opcoes, plano.exigeImagemEspecifica);
 
   if (opcoes.length < minimo) {
     pendencias.push(`apenas ${opcoes.length} candidata(s) de imagem encontrada(s); minimo operacional e ${minimo}`);
+  }
+  if (plano.exigeImagemEspecifica && !opcoes.some((c) => STATUS_PRINCIPAL_OK.has(String(c.status || "").toLowerCase())) && !embeds.length) {
+    pendencias.push(
+      "materia exige imagem especifica da cena/fato (bloco imagem.exigeImagemEspecifica); nenhuma candidata licenciada/autorizada " +
+      "e nenhum embed do post original foram encontrados. NAO publicar com foto generica — reportar a Rafael.",
+    );
   }
 
   return { opcoes, embeds: dedupe(embeds).slice(0, 3), pendencias };
 }
 
-module.exports = { buscarMultiOpcoes, planoVisual };
+module.exports = { buscarMultiOpcoes, planoVisual, restringirSeExigeImagemEspecifica };
