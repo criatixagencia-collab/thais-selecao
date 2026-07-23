@@ -671,6 +671,8 @@ async function main() {
       body: text.body,
       paragraphs: text.paragraphs,
       sources: itemSources(source),
+      editorialAlert: source.editorialAlert || source.alertaEditorial || source.observacoesEditoriais || "",
+      pendenciasImagem: Array.isArray(source.pendenciasImagem) ? source.pendenciasImagem : [],
       imageOptions,
       embedOptions: buildEmbedOptions(source),
     });
