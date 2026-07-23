@@ -262,6 +262,16 @@ function validateSelection(dir, args) {
         if (!html.includes(expectedMobileClass)) {
           fail(errors, `${label}: ${imageLabel} nao preserva a proporcao original no mobile.`);
         }
+        // Corte desktop de foto vertical precisa de foco de saliencia
+        // (rosto centralizado), nunca corte cego pelo centro.
+        if (orientation === "vertical") {
+          const foco = image.cropFocus;
+          if (!foco || !Number.isFinite(Number(foco.y))) {
+            fail(errors, `${label}: ${imageLabel} e vertical sem cropFocus calculado (corte desktop cairia cego no centro).`);
+          } else if (!html.includes(`object-position:${foco.x}% ${foco.y}%`)) {
+            fail(errors, `${label}: ${imageLabel} tem cropFocus no data.json, mas o HTML nao aplica o object-position correspondente.`);
+          }
+        }
       }
 
       const imagePath = path.resolve(dir, url);

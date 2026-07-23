@@ -10,3 +10,5 @@ data/selecao-pronta-sem-*
 cache/
 imagens-workdir/
 /imagens/
+
+scripts/bin/detecta-rosto

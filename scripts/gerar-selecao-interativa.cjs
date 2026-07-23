@@ -24,6 +24,7 @@ const {
   isAbstractClosing,
   hasHardBannedClosing,
 } = require("./lib/texto-editorial.cjs");
+const { focoDoCorte } = require("./lib/crop.cjs");
 
 const MIN_BODY_CHARS = Number(process.env.THAIS_MIN_BODY_CHARS || 800);
 const MIN_PARAGRAPHS = Number(process.env.THAIS_MIN_PARAGRAPHS || 3);
@@ -331,7 +332,9 @@ async function buildImageOptions(item, inputDir, imagesDir, slug) {
     const fileBase = `${slug}-img-${String(index + 1).padStart(2, "0")}`;
     try {
       const local = await copyOrDownloadImage({ url, inputDir, imagesDir, fileBase });
+      const cropFocus = await focoDoCorte(path.join(imagesDir, local.fileName));
       options.push({
+        cropFocus,
         url: local.localUrl,
         originalUrl: url,
         sourceUrl: candidateSourceUrl(candidate),
@@ -384,13 +387,19 @@ function renderImageOptions(item) {
     const isVertical = image.orientation === "vertical" || height > width;
     const desktopClass = isVertical ? "crop-desktop crop-cut" : "crop-desktop crop-original";
     const desktopAspect = isVertical ? "16/9" : originalAspect;
+    // Foco de corte por saliencia (rosto/sujeito): aplica no thumbnail
+    // principal (cover 142px) e no preview desktop cortado.
+    const foco = image.cropFocus && Number.isFinite(image.cropFocus.y)
+      ? `object-position:${image.cropFocus.x}% ${image.cropFocus.y}%`
+      : "";
+    const estiloFoco = foco ? ` style="${escapeHtml(foco)}"` : "";
     return (
       `<label class="img-option" for="${escapeHtml(id)}">` +
         `<input type="radio" name="img_${escapeHtml(item.num)}" id="${escapeHtml(id)}" value="${escapeHtml(index)}" data-image-index="${escapeHtml(index)}">` +
-        `<img class="img-main" src="${escapeHtml(image.url)}" alt="${escapeHtml(alt)}" loading="lazy">` +
+        `<img class="img-main" src="${escapeHtml(image.url)}" alt="${escapeHtml(alt)}" loading="lazy"${estiloFoco}>` +
         '<span class="crop-previews" aria-hidden="true">' +
           `<span class="crop-preview ${desktopClass}" style="aspect-ratio:${escapeHtml(desktopAspect)}">` +
-            `<img src="${escapeHtml(image.url)}" alt="" loading="lazy">` +
+            `<img src="${escapeHtml(image.url)}" alt="" loading="lazy"${isVertical ? estiloFoco : ""}>` +
             '<span>desktop</span>' +
           '</span>' +
           `<span class="crop-preview crop-mobile crop-original" style="aspect-ratio:${escapeHtml(originalAspect)}">` +
