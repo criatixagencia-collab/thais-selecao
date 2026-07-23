@@ -1,2 +1,12 @@
 .env
 .env.*
+node_modules/
+.DS_Store
+._*
+**/._*
+data/*.backup*
+data/selecao-pronta-parcial*
+data/selecao-pronta-sem-*
+cache/
+imagens-workdir/
+/imagens/
