@@ -364,6 +364,32 @@ async function buildImageOptions(item, inputDir, imagesDir, slug) {
   return options;
 }
 
+const EMBED_URL_RE = /^https:\/\/(www\.)?instagram\.com\/(p|reel|tv)\/[A-Za-z0-9_-]+\/?/;
+const EMBED_PERFIL_RE = /^https:\/\/(www\.)?instagram\.com\/[A-Za-z0-9_.]+\/?$/;
+
+function buildEmbedOptions(item) {
+  const raw = Array.isArray(item.visuaisEmbed) ? item.visuaisEmbed : [];
+  const seen = new Set();
+  const options = [];
+  for (const cand of raw) {
+    const embedUrl = String(cand?.embedUrl || "").trim();
+    if (!embedUrl || seen.has(embedUrl)) continue;
+    if (!EMBED_URL_RE.test(embedUrl) && !EMBED_PERFIL_RE.test(embedUrl)) continue;
+    seen.add(embedUrl);
+    options.push({
+      type: "embed_instagram",
+      embedUrl,
+      credit: String(cand.credito || cand.credit || "").trim() || "Instagram",
+      sourceUrl: String(cand.pagina || cand.sourceUrl || embedUrl).trim(),
+      status: "usar via embed",
+      legenda: String(cand.legenda || "").trim(),
+      label: `Embed ${options.length + 1}`,
+    });
+    if (options.length >= 3) break;
+  }
+  return options;
+}
+
 function renderSources(sources) {
   if (!sources.length) return "Fontes pendentes";
   return sources.map((source) => {
@@ -373,6 +399,26 @@ function renderSources(sources) {
     if (!url) return escapeHtml(label);
     return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
   }).join(" / ");
+}
+
+function renderEmbedOptions(item) {
+  const base = item.imageOptions.length;
+  return (item.embedOptions || []).map((embed, index) => {
+    const id = `emb_${item.num}_${index}`;
+    return (
+      `<label class="img-option embed-option" for="${escapeHtml(id)}">` +
+        `<input type="radio" name="img_${escapeHtml(item.num)}" id="${escapeHtml(id)}" value="embed-${escapeHtml(index)}" data-embed-index="${escapeHtml(index)}">` +
+        '<span class="embed-box">' +
+          '<span class="embed-tag">Embed oficial do Instagram</span>' +
+          `<span class="embed-handle">${escapeHtml(embed.credit)}</span>` +
+          (embed.legenda ? `<span class="embed-caption">${escapeHtml(embed.legenda)}</span>` : "") +
+        '</span>' +
+        `<span class="img-label">${escapeHtml(embed.label)} - ${escapeHtml(embed.credit)}</span>` +
+        `<span class="img-status">${escapeHtml(embed.status)}</span>` +
+        `<a href="${escapeHtml(embed.embedUrl)}" target="_blank" rel="noopener noreferrer" class="img-src">Abrir post original</a>` +
+      "</label>"
+    );
+  }).join("");
 }
 
 function renderImageOptions(item) {
@@ -432,7 +478,7 @@ function renderHtml(items, generatedAt, title) {
         `<p class="sources"><strong>Fontes:</strong> ${renderSources(item.sources)}</p>` +
         '<section class="image-block">' +
           '<h3>Escolha a imagem</h3>' +
-          `<div class="img-grid">${renderImageOptions(item)}</div>` +
+          `<div class="img-grid">${renderImageOptions(item)}${renderEmbedOptions(item)}</div>` +
         '</section>' +
         '<div class="decision-bar">' +
           '<button type="button" class="decision-btn approve" data-action="approved">Aprovar materia</button>' +
@@ -486,6 +532,10 @@ h2{font-size:1.35rem;font-weight:900;line-height:1.2;margin-bottom:.45rem;word-b
 .crop-preview img{display:block;height:100%;object-fit:contain;width:100%}
 .crop-cut img{object-fit:cover}
 .crop-preview span{background:rgba(0,0,0,.68);bottom:0;color:#d8cfcc;font-size:.55rem;font-weight:850;left:0;letter-spacing:.05em;line-height:1;padding:.18rem .28rem;position:absolute;text-transform:uppercase}
+.embed-option .embed-box{background:linear-gradient(135deg,#2a1a2e,#1a1420);display:flex;flex-direction:column;gap:.35rem;justify-content:center;min-height:142px;padding:.7rem}
+.embed-tag{color:#e1a0ff;font-size:.6rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.embed-handle{color:#f4eeee;font-size:.85rem;font-weight:850;word-break:break-all}
+.embed-caption{color:#b8aaa7;font-size:.68rem;line-height:1.3}
 .img-src{color:var(--text-dim);display:inline-block;font-size:.65rem;margin-top:.25rem;padding:0 .25rem;text-decoration:underline}
 .img-label{color:#c7bbb8;display:block;font-size:.7rem;line-height:1.25;padding:.45rem .45rem .1rem}
 .img-status{color:#8f8582;display:block;font-size:.66rem;line-height:1.2;padding:0 .45rem .45rem;text-transform:uppercase}
@@ -521,12 +571,17 @@ ${cards}
   try { state = JSON.parse(localStorage.getItem(storageKey) || "{}") || {}; } catch (error) { state = {}; }
   function key(card){ return card.dataset.slug || card.dataset.num; }
   function persist(){ localStorage.setItem(storageKey, JSON.stringify(state)); }
-  function selectedLabel(decision){ return decision.imageIndex === undefined || decision.imageIndex === null ? "sem imagem" : "opcao " + (Number(decision.imageIndex) + 1); }
+  function selectedLabel(decision){
+    if (decision.embedIndex !== undefined && decision.embedIndex !== null) return "embed " + (Number(decision.embedIndex) + 1);
+    return decision.imageIndex === undefined || decision.imageIndex === null ? "sem imagem" : "opcao " + (Number(decision.imageIndex) + 1);
+  }
   function updateCard(card){
     var decision = state[key(card)] || { status: "pending" };
     if (decision.status !== "approved") decision.status = "pending";
     card.classList.toggle("is-approved", decision.status === "approved");
-    var input = card.querySelector('input[data-image-index="' + decision.imageIndex + '"]');
+    var input = decision.embedIndex !== undefined && decision.embedIndex !== null
+      ? card.querySelector('input[data-embed-index="' + decision.embedIndex + '"]')
+      : card.querySelector('input[data-image-index="' + decision.imageIndex + '"]');
     if (input) input.checked = true;
     var pill = card.querySelector('[data-role="status-pill"]');
     var status = card.querySelector('[data-role="decision-status"]');
@@ -548,6 +603,11 @@ ${cards}
     state[key(card)] = { status: current.status === "approved" ? "approved" : "pending", imageIndex: Number(imageIndex), title: card.dataset.title, num: card.dataset.num, updatedAt: new Date().toISOString() };
     persist(); updateCard(card); updateSummary();
   }
+  function setEmbed(card, embedIndex){
+    var current = state[key(card)] || { status: "pending" };
+    state[key(card)] = { status: current.status === "approved" ? "approved" : "pending", embedIndex: Number(embedIndex), title: card.dataset.title, num: card.dataset.num, updatedAt: new Date().toISOString() };
+    persist(); updateCard(card); updateSummary();
+  }
   cards.forEach(function(card){
     updateCard(card);
     card.addEventListener("click", function(event){
@@ -561,6 +621,7 @@ ${cards}
     });
     card.addEventListener("change", function(event){
       if (event.target.matches('input[data-image-index]')) setImage(card, event.target.dataset.imageIndex);
+      if (event.target.matches('input[data-embed-index]')) setEmbed(card, event.target.dataset.embedIndex);
     });
   });
   document.querySelector('[data-action="clear-all"]').addEventListener("click", function(){ state = {}; persist(); cards.forEach(updateCard); updateSummary(); });
@@ -568,7 +629,7 @@ ${cards}
     var text = "APROVADAS - " + location.pathname + "\\n\\n";
     cards.forEach(function(card){
       var decision = state[key(card)] || {};
-      if (decision.status === "approved") text += String(card.dataset.num).padStart(2, "0") + " - " + card.dataset.title + "\\nImagem: " + selectedLabel(decision) + "\\n\\n";
+      if (decision.status === "approved") text += String(card.dataset.num).padStart(2, "0") + " - " + card.dataset.title + "\\nVisual: " + selectedLabel(decision) + "\\n\\n";
     });
     navigator.clipboard.writeText(text);
     event.target.textContent = "Copiado";
@@ -611,6 +672,7 @@ async function main() {
       paragraphs: text.paragraphs,
       sources: itemSources(source),
       imageOptions,
+      embedOptions: buildEmbedOptions(source),
     });
   }
 

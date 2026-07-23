@@ -181,6 +181,25 @@ function validateSelection(dir, args) {
     }
     totalImages += images.length;
 
+    // Embeds oficiais do Instagram: opcionais, mas quando existem precisam
+    // de URL real de post/perfil, credito de perfil e status "usar via embed".
+    const EMBED_OK_RE = /^https:\/\/(www\.)?instagram\.com\/((p|reel|tv)\/[A-Za-z0-9_-]+\/?|[A-Za-z0-9_.]+\/?)$/;
+    for (const [embedIndex, embed] of (Array.isArray(item.embedOptions) ? item.embedOptions : []).entries()) {
+      const embedLabel = `${title} / embed ${embedIndex + 1}`;
+      if (!EMBED_OK_RE.test(String(embed.embedUrl || ""))) {
+        fail(errors, `${label}: ${embedLabel} sem URL real de post/perfil do Instagram (${embed.embedUrl || "vazio"}).`);
+      }
+      if (String(embed.status || "") !== "usar via embed") {
+        fail(errors, `${label}: ${embedLabel} com status invalido ("${embed.status}"); embed oficial usa "usar via embed".`);
+      }
+      if (!/^Instagram\//.test(String(embed.credit || ""))) {
+        fail(errors, `${label}: ${embedLabel} sem credito de perfil (esperado "Instagram/@perfil").`);
+      }
+      if (!html.includes(embed.embedUrl)) {
+        fail(errors, `${label}: ${embedLabel} existe no data.json, mas nao aparece no HTML.`);
+      }
+    }
+
     for (const [imageIndex, image] of images.entries()) {
       const imageLabel = `${title} / imagem ${imageIndex + 1}`;
       const url = image.url || image.src || image.imageUrl || "";
