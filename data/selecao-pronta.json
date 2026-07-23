@@ -21,79 +21,110 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "imagens/20260723-selecao/caua-reymond-commons.jpg",
-          "srcLocal": "imagens/20260723-selecao/caua-reymond-commons.jpg",
-          "label": "Cauã Reymond - imagem licenciada",
-          "credit": "Foto: Tm / CC BY-SA 2.0",
-          "credito": "Foto: Tm / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Cau%C3%A3_Reymond.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:14_-_Caua_Reymond_(17132474421).jpg",
+          "credito": "Foto: Maurício Saldanha from Porto Alegre, Brasil / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cau%C3%A3_Reymond.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
+        },
+        {
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Cau%C3%A3_Reymond_e_Paula_Burlamaqui.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: bahianoticias / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cau%C3%A3_Reymond_e_Paula_Burlamaqui.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
+        },
+        {
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/22/14_-_Caua_Reymond_%2817132474421%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Renan Katayama / CC BY-SA 2.0",
+          "status": "licenciada",
           "pagina": "https://commons.wikimedia.org/wiki/File:14_-_Caua_Reymond_(17132474421).jpg",
-          "status": "licenciada"
+          "observacao": "",
+          "label": "Opcao 3"
         },
         {
-          "url": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-02.jpg",
-          "label": "Elenco de Jogada de Risco",
-          "credit": "Foto: Daniel Pinheiro / Brazil News",
-          "credito": "Foto: Daniel Pinheiro / Brazil News",
-          "source": "DuckDuckGo - www.portalin.com.br",
-          "fonte": "DuckDuckGo - www.portalin.com.br",
-          "sourceUrl": "https://www.portalin.com.br/notas/fim-das-gravacoes-da-serie-jogada-de-risco-reune-caua-reymond-e-elenco-em-clima-de-festa-no-rio/",
-          "pagina": "https://www.portalin.com.br/notas/fim-das-gravacoes-da-serie-jogada-de-risco-reune-caua-reymond-e-elenco-em-clima-de-festa-no-rio/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-02.jpg"
-        },
-        {
-          "url": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-03.jpg",
-          "label": "Opção 3",
-          "credit": "Foto: Reprodução/Instagram/@globoplay",
-          "credito": "Foto: Reprodução/Instagram/@globoplay",
-          "source": "Instagram @globoplay",
-          "fonte": "Instagram @globoplay",
-          "sourceUrl": "https://www.instagram.com/globoplay/",
-          "pagina": "https://www.instagram.com/globoplay/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-03.jpg"
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a3/15_-_Caua_Reymond-001_%2816946929269%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Renan Katayama / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:15_-_Caua_Reymond-001_(16946929269).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
       "imgs": [
         {
-          "url": "imagens/20260723-selecao/caua-reymond-commons.jpg",
-          "srcLocal": "imagens/20260723-selecao/caua-reymond-commons.jpg",
-          "label": "Cauã Reymond - imagem licenciada",
-          "credit": "Foto: Tm / CC BY-SA 2.0",
-          "credito": "Foto: Tm / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Cau%C3%A3_Reymond.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:14_-_Caua_Reymond_(17132474421).jpg",
+          "credito": "Foto: Maurício Saldanha from Porto Alegre, Brasil / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cau%C3%A3_Reymond.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
+        },
+        {
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Cau%C3%A3_Reymond_e_Paula_Burlamaqui.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: bahianoticias / CC BY 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cau%C3%A3_Reymond_e_Paula_Burlamaqui.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
+        },
+        {
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/22/14_-_Caua_Reymond_%2817132474421%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Renan Katayama / CC BY-SA 2.0",
+          "status": "licenciada",
           "pagina": "https://commons.wikimedia.org/wiki/File:14_-_Caua_Reymond_(17132474421).jpg",
-          "status": "licenciada"
+          "observacao": "",
+          "label": "Opcao 3"
         },
         {
-          "url": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-02.jpg",
-          "label": "Elenco de Jogada de Risco",
-          "credit": "Foto: Daniel Pinheiro / Brazil News",
-          "credito": "Foto: Daniel Pinheiro / Brazil News",
-          "source": "DuckDuckGo - www.portalin.com.br",
-          "fonte": "DuckDuckGo - www.portalin.com.br",
-          "sourceUrl": "https://www.portalin.com.br/notas/fim-das-gravacoes-da-serie-jogada-de-risco-reune-caua-reymond-e-elenco-em-clima-de-festa-no-rio/",
-          "pagina": "https://www.portalin.com.br/notas/fim-das-gravacoes-da-serie-jogada-de-risco-reune-caua-reymond-e-elenco-em-clima-de-festa-no-rio/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-02.jpg"
-        },
-        {
-          "url": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-03.jpg",
-          "label": "Opção 3",
-          "credit": "Foto: Reprodução/Instagram/@globoplay",
-          "credito": "Foto: Reprodução/Instagram/@globoplay",
-          "source": "Instagram @globoplay",
-          "fonte": "Instagram @globoplay",
-          "sourceUrl": "https://www.instagram.com/globoplay/",
-          "pagina": "https://www.instagram.com/globoplay/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/01-jogada-de-risco-estreia-no-globoplay-com-caua-reymond-e-elenco-de-peso-img-03.jpg"
+          "url": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m01-jogada-de-risco-estreia-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a3/15_-_Caua_Reymond-001_%2816946929269%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Renan Katayama / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:15_-_Caua_Reymond-001_(16946929269).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
+      ],
+      "imagem": {
+        "tipo": "obra",
+        "entidades": [
+          "Cauã Reymond",
+          "Jogada de Risco série"
+        ],
+        "instagram": [
+          "@cauareymond"
+        ],
+        "plataformaOficial": "Globoplay"
+      },
+      "visuaisEmbed": [],
+      "pendenciasImagem": [
+        "Instagram @cauareymond: orcamento diario de runs Apify esgotado"
       ]
     },
     {
@@ -120,81 +151,110 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-01.jpg",
-          "label": "Gaby Amarantos - opção 1",
-          "credit": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Gaby_Amarantos_-_Conex%C3%A3o_Vivo_Belo_Horizonte_%2813%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Casa Fora do Eixo Minas / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_-_Conex%C3%A3o_Vivo_Belo_Horizonte_(13).jpg",
+          "observacao": "",
+          "label": "Opcao 1"
+        },
+        {
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gaby_Amarantos_%282011%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Campus Party Brasil / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_(2011).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
+        },
+        {
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/49/Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_2.jpg",
+          "fonte": "Wikimedia Commons",
           "credito": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
-          "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGaby%20Amarantos%20Crian%C3%A7a%20Riberinha.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGaby%20Amarantos%20Crian%C3%A7a%20Riberinha.jpg",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_2.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
         },
         {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-02.jpg",
-          "label": "Gaby Amarantos - opção 2",
-          "credit": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "credito": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_1.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20PURAK%C3%8A%2003.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20PURAK%C3%8A%2003.jpg",
+          "credito": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-02.jpg"
-        },
-        {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-03.jpg",
-          "label": "Gaby Amarantos - opção 3",
-          "credit": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "credito": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
-          "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20(2021).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20(2021).jpg",
-          "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-03.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_1.jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
       "imgs": [
         {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-01.jpg",
-          "label": "Gaby Amarantos - opção 1",
-          "credit": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Gaby_Amarantos_-_Conex%C3%A3o_Vivo_Belo_Horizonte_%2813%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Casa Fora do Eixo Minas / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_-_Conex%C3%A3o_Vivo_Belo_Horizonte_(13).jpg",
+          "observacao": "",
+          "label": "Opcao 1"
+        },
+        {
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/57/Gaby_Amarantos_%282011%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Campus Party Brasil / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_(2011).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
+        },
+        {
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/49/Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_2.jpg",
+          "fonte": "Wikimedia Commons",
           "credito": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
-          "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGaby%20Amarantos%20Crian%C3%A7a%20Riberinha.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGaby%20Amarantos%20Crian%C3%A7a%20Riberinha.jpg",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_2.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
         },
         {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-02.jpg",
-          "label": "Gaby Amarantos - opção 2",
-          "credit": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "credito": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m02-gaby-amarantos-estreia-a-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_1.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20PURAK%C3%8A%2003.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20PURAK%C3%8A%2003.jpg",
+          "credito": "Foto: Equipe Gaby Amarantos / CC BY-SA 4.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-02.jpg"
-        },
-        {
-          "url": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-03.jpg",
-          "label": "Gaby Amarantos - opção 3",
-          "credit": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "credito": "Foto: Rodolfo Magalhães / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
-          "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20(2021).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AGABY%20AMARANTOS%20(2021).jpg",
-          "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/02-gaby-amarantos-estreia-adaptacao-brasileira-de-a-revolucao-dos-bichos-em-audio-img-03.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gaby_Amarantos_Tecno_Show_Bel%C3%A9m_1.jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
-      "statusImagem": "pendente - downloads falharam"
+      "imagem": {
+        "tipo": "pessoa",
+        "entidades": [
+          "Gaby Amarantos"
+        ],
+        "instagram": [
+          "@gabyamarantos"
+        ],
+        "plataformaOficial": "Audible"
+      },
+      "visuaisEmbed": [],
+      "pendenciasImagem": [
+        "Instagram @gabyamarantos: orcamento diario de runs Apify esgotado"
+      ]
     },
     {
       "num": 3,
@@ -220,81 +280,110 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-01.jpg",
-          "label": "Eagle-Eye Cherry ao vivo",
-          "credit": "Foto: Thesupermat / CC BY-SA 4.0",
-          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_012.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEagle%20Eye%20Cherry%20Festival%20du%20Bout%20du%20Monde%202019.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AEagle%20Eye%20Cherry%20Festival%20du%20Bout%20du%20Monde%202019.jpg",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_012.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-02.jpg",
-          "label": "Arte oficial do show no Tokio Marine Hall",
-          "credit": "Imagem: Tokio Marine Hall / material de divulgação",
-          "credito": "Imagem: Tokio Marine Hall / material de divulgação",
-          "source": "Tokio Marine Hall",
-          "fonte": "Tokio Marine Hall",
-          "sourceUrl": "https://www.tokiomarinehall.com.br/eagle-eye-cherry/",
-          "pagina": "https://www.tokiomarinehall.com.br/eagle-eye-cherry/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-02.jpg"
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/66/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_060.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_060.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-03.jpg",
-          "label": "Imagem do evento na Ticketmaster",
-          "credit": "Imagem: Ticketmaster / material de divulgação",
-          "credito": "Imagem: Ticketmaster / material de divulgação",
-          "source": "Ticketmaster",
-          "fonte": "Ticketmaster",
-          "sourceUrl": "https://www.ticketmaster.com.br/event/eagle-eye-cherry-tokio-marine-hall",
-          "pagina": "https://www.ticketmaster.com.br/event/eagle-eye-cherry-tokio-marine-hall",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-03.jpg"
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/49/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_062.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_062.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_063.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_063.jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
       "imgs": [
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-01.jpg",
-          "label": "Eagle-Eye Cherry ao vivo",
-          "credit": "Foto: Thesupermat / CC BY-SA 4.0",
-          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_012.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEagle%20Eye%20Cherry%20Festival%20du%20Bout%20du%20Monde%202019.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AEagle%20Eye%20Cherry%20Festival%20du%20Bout%20du%20Monde%202019.jpg",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_012.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-02.jpg",
-          "label": "Arte oficial do show no Tokio Marine Hall",
-          "credit": "Imagem: Tokio Marine Hall / material de divulgação",
-          "credito": "Imagem: Tokio Marine Hall / material de divulgação",
-          "source": "Tokio Marine Hall",
-          "fonte": "Tokio Marine Hall",
-          "sourceUrl": "https://www.tokiomarinehall.com.br/eagle-eye-cherry/",
-          "pagina": "https://www.tokiomarinehall.com.br/eagle-eye-cherry/",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-02.jpg"
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/66/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_060.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_060.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-03.jpg",
-          "label": "Imagem do evento na Ticketmaster",
-          "credit": "Imagem: Ticketmaster / material de divulgação",
-          "credito": "Imagem: Ticketmaster / material de divulgação",
-          "source": "Ticketmaster",
-          "fonte": "Ticketmaster",
-          "sourceUrl": "https://www.ticketmaster.com.br/event/eagle-eye-cherry-tokio-marine-hall",
-          "pagina": "https://www.ticketmaster.com.br/event/eagle-eye-cherry-tokio-marine-hall",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/03-eagle-eye-cherry-volta-ao-brasil-para-show-unico-em-sao-paulo-img-03.jpg"
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/49/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_062.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_062.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m03-eagle-eye-cherry-volta-a-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_063.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Thesupermat / CC BY-SA 4.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Festival_du_Bout_du_Monde_2019_-_Eagle_Eye_Cherry_-_063.jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
-      "statusImagem": "pendente - downloads falharam"
+      "imagem": {
+        "tipo": "pessoa",
+        "entidades": [
+          "Eagle-Eye Cherry"
+        ],
+        "instagram": [
+          "@eagle_eyecherry"
+        ],
+        "plataformaOficial": ""
+      },
+      "visuaisEmbed": [],
+      "pendenciasImagem": [
+        "Instagram @eagle_eyecherry: orcamento diario de runs Apify esgotado"
+      ]
     },
     {
       "num": 4,
@@ -320,81 +409,107 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-01.png",
-          "label": "Painel de The Big Bang Theory",
-          "credit": "Foto: MelodyJSandoval / CC BY 2.0",
-          "credito": "Foto: MelodyJSandoval / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Kevin_Sussman_by_Gage_Skidmore.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABig%20Bang%20Theory%20Panel.png",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ABig%20Bang%20Theory%20Panel.png",
+          "credito": "Foto: Gage Skidmore / CC BY-SA 3.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-01.png"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Kevin_Sussman_by_Gage_Skidmore.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-02.jpg",
-          "label": "Elenco de The Big Bang Theory",
-          "credit": "Foto: MelodyJSandoval / CC BY 2.0",
-          "credito": "Foto: MelodyJSandoval / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/98/Johnny_Galecki%2C_Kaley_Cuoco%2C_Kunal_Nayyar%2C_Kevin_Sussman%2C_Steven_Molaro_%26_Bill_Prady_%2835975433592%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACast%20of%20The%20Big%20Bang%20Theory%2001.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ACast%20of%20The%20Big%20Bang%20Theory%2001.jpg",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-02.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Johnny_Galecki,_Kaley_Cuoco,_Kunal_Nayyar,_Kevin_Sussman,_Steven_Molaro_%26_Bill_Prady_(35975433592).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-03.jpg",
-          "label": "Loja de quadrinhos ligada à série",
-          "credit": "Foto: Chester / CC BY 2.0",
-          "credito": "Foto: Chester / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/54/Johnny_Galecki%2C_Kaley_Cuoco%2C_Kunal_Nayyar_%26_Kevin_Sussman_%2835336454473%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe%20Big%20Bang%20Theory%2C%20Comic%20Book%20Store%20%22The%20Comic%20Center%20of%20Pasadena%22%20(6196384919).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AThe%20Big%20Bang%20Theory%2C%20Comic%20Book%20Store%20%22The%20Comic%20Center%20of%20Pasadena%22%20(6196384919).jpg",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-03.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Johnny_Galecki,_Kaley_Cuoco,_Kunal_Nayyar_%26_Kevin_Sussman_(35336454473).jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kunal_Nayyar_%26_Kevin_Sussman_%2836103124846%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Kunal_Nayyar_%26_Kevin_Sussman_(36103124846).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
       "imgs": [
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-01.png",
-          "label": "Painel de The Big Bang Theory",
-          "credit": "Foto: MelodyJSandoval / CC BY 2.0",
-          "credito": "Foto: MelodyJSandoval / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Kevin_Sussman_by_Gage_Skidmore.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABig%20Bang%20Theory%20Panel.png",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ABig%20Bang%20Theory%20Panel.png",
+          "credito": "Foto: Gage Skidmore / CC BY-SA 3.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-01.png"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Kevin_Sussman_by_Gage_Skidmore.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-02.jpg",
-          "label": "Elenco de The Big Bang Theory",
-          "credit": "Foto: MelodyJSandoval / CC BY 2.0",
-          "credito": "Foto: MelodyJSandoval / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/98/Johnny_Galecki%2C_Kaley_Cuoco%2C_Kunal_Nayyar%2C_Kevin_Sussman%2C_Steven_Molaro_%26_Bill_Prady_%2835975433592%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACast%20of%20The%20Big%20Bang%20Theory%2001.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ACast%20of%20The%20Big%20Bang%20Theory%2001.jpg",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-02.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Johnny_Galecki,_Kaley_Cuoco,_Kunal_Nayyar,_Kevin_Sussman,_Steven_Molaro_%26_Bill_Prady_(35975433592).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-03.jpg",
-          "label": "Loja de quadrinhos ligada à série",
-          "credit": "Foto: Chester / CC BY 2.0",
-          "credito": "Foto: Chester / CC BY 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/54/Johnny_Galecki%2C_Kaley_Cuoco%2C_Kunal_Nayyar_%26_Kevin_Sussman_%2835336454473%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe%20Big%20Bang%20Theory%2C%20Comic%20Book%20Store%20%22The%20Comic%20Center%20of%20Pasadena%22%20(6196384919).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AThe%20Big%20Bang%20Theory%2C%20Comic%20Book%20Store%20%22The%20Comic%20Center%20of%20Pasadena%22%20(6196384919).jpg",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/04-spin-off-de-the-big-bang-theory-estreia-na-hbo-max-com-aventura-multiversal-img-03.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Johnny_Galecki,_Kaley_Cuoco,_Kunal_Nayyar_%26_Kevin_Sussman_(35336454473).jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m04-spin-off-de-the-big-bang-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kunal_Nayyar_%26_Kevin_Sussman_%2836103124846%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Gage Skidmore from Peoria, AZ, United States of America / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Kunal_Nayyar_%26_Kevin_Sussman_(36103124846).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
-      "statusImagem": "pendente - downloads falharam"
+      "imagem": {
+        "tipo": "obra",
+        "entidades": [
+          "Kevin Sussman",
+          "Stuart Nao Consegue Salvar o Universo"
+        ],
+        "instagram": [],
+        "plataformaOficial": "HBO Max"
+      },
+      "visuaisEmbed": [],
+      "pendenciasImagem": []
     },
     {
       "num": 5,
@@ -416,81 +531,110 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-01.jpg",
-          "label": "Ana Maria Braga",
-          "credit": "Foto: Multishow / CC BY 3.0",
-          "credito": "Foto: Multishow / CC BY 3.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-0.png",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-0.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f3/AnaMariaBraga2.png",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAna%20Maria%20Braga%20in%202019%2001.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AAna%20Maria%20Braga%20in%202019%2001.jpg",
+          "credito": "Foto: United States Department of State. Photographer not specified. / Public domain",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:AnaMariaBraga2.png",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-02.jpg",
-          "label": "Lamine Yamal",
-          "credit": "Foto: Biso / CC BY 4.0",
-          "credito": "Foto: Biso / CC BY 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/86/Dilma_e_Ana_Maria_Braga_%285777420587%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALamine%20Yamal%20in%202025.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ALamine%20Yamal%20in%202025.jpg",
+          "credito": "Foto: Dilma Rousseff from Brasil / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-02.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dilma_e_Ana_Maria_Braga_(5777420587).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-03.jpg",
-          "label": "Biscoito testado no Mais Você",
-          "credit": "Foto: Daniela Meira/Globo / reprodução editorial da página de receita",
-          "credito": "Foto: Daniela Meira/Globo / reprodução editorial da página de receita",
-          "source": "Receitas Globo",
-          "fonte": "Receitas Globo",
-          "sourceUrl": "https://receitas.globo.com/receitas-da-tv/mais-voce/biscoito-do-irmao-do-yamal-ana-maria-braga-testa-receita-das-redes-sociais.ghtml",
-          "pagina": "https://receitas.globo.com/receitas-da-tv/mais-voce/biscoito-do-irmao-do-yamal-ana-maria-braga-testa-receita-das-redes-sociais.ghtml",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-03.jpg"
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/7/7a/AnaMariaBraga2.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: United States Department of State. Photographer not specified. / Public domain",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:AnaMariaBraga2.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/65/Dilma_e_Ana_Maria_Braga_%285777420587%29_%28cropped%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Dilma Rousseff from Brasil / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dilma_e_Ana_Maria_Braga_(5777420587)_(cropped).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
       "imgs": [
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-01.jpg",
-          "label": "Ana Maria Braga",
-          "credit": "Foto: Multishow / CC BY 3.0",
-          "credito": "Foto: Multishow / CC BY 3.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-0.png",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-0.png",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f3/AnaMariaBraga2.png",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAna%20Maria%20Braga%20in%202019%2001.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AAna%20Maria%20Braga%20in%202019%2001.jpg",
+          "credito": "Foto: United States Department of State. Photographer not specified. / Public domain",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-01.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:AnaMariaBraga2.png",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-02.jpg",
-          "label": "Lamine Yamal",
-          "credit": "Foto: Biso / CC BY 4.0",
-          "credito": "Foto: Biso / CC BY 4.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-1.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-1.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/86/Dilma_e_Ana_Maria_Braga_%285777420587%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALamine%20Yamal%20in%202025.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3ALamine%20Yamal%20in%202025.jpg",
+          "credito": "Foto: Dilma Rousseff from Brasil / CC BY-SA 2.0",
           "status": "licenciada",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-02.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dilma_e_Ana_Maria_Braga_(5777420587).jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-03.jpg",
-          "label": "Biscoito testado no Mais Você",
-          "credit": "Foto: Daniela Meira/Globo / reprodução editorial da página de receita",
-          "credito": "Foto: Daniela Meira/Globo / reprodução editorial da página de receita",
-          "source": "Receitas Globo",
-          "fonte": "Receitas Globo",
-          "sourceUrl": "https://receitas.globo.com/receitas-da-tv/mais-voce/biscoito-do-irmao-do-yamal-ana-maria-braga-testa-receita-das-redes-sociais.ghtml",
-          "pagina": "https://receitas.globo.com/receitas-da-tv/mais-voce/biscoito-do-irmao-do-yamal-ana-maria-braga-testa-receita-das-redes-sociais.ghtml",
-          "status": "usar com cautela",
-          "srcLocal": "selecao20260723-0905/imagens/05-ana-maria-braga-testa-biscoito-viral-do-irmao-de-lamine-yamal-no-mais-voce-img-03.jpg"
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/7/7a/AnaMariaBraga2.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: United States Department of State. Photographer not specified. / Public domain",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:AnaMariaBraga2.jpg",
+          "observacao": "",
+          "label": "Opcao 3"
+        },
+        {
+          "url": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m05-ana-maria-braga-testa-bi-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/65/Dilma_e_Ana_Maria_Braga_%285777420587%29_%28cropped%29.jpg",
+          "fonte": "Wikimedia Commons",
+          "credito": "Foto: Dilma Rousseff from Brasil / CC BY-SA 2.0",
+          "status": "licenciada",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Dilma_e_Ana_Maria_Braga_(5777420587)_(cropped).jpg",
+          "observacao": "",
+          "label": "Opcao 4"
         }
       ],
-      "statusImagem": "pendente - downloads falharam"
+      "imagem": {
+        "tipo": "pessoa",
+        "entidades": [
+          "Ana Maria Braga"
+        ],
+        "instagram": [
+          "@anamariabragaoficial"
+        ],
+        "plataformaOficial": "TV Globo"
+      },
+      "visuaisEmbed": [],
+      "pendenciasImagem": [
+        "Instagram @anamariabragaoficial: orcamento diario de runs Apify esgotado"
+      ]
     },
     {
       "num": 6,
@@ -516,81 +660,85 @@
       "statusEditorial": "rascunho preparado",
       "imagens": [
         {
-          "url": "imagens/final-da-copa-tera-p-0.webp",
-          "label": "Madonna em show",
-          "credit": "Foto: chrisweger / CC BY-SA 2.0",
-          "credito": "Foto: chrisweger / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Raphael_-_The_Alba_Madonna_-_Google_Art_Project.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMadonna%20Rebel%20Heart%20Tour%202015%20-%20Stockholm%20(23051472299)%20(cropped).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AMadonna%20Rebel%20Heart%20Tour%202015%20-%20Stockholm%20(23051472299)%20(cropped).jpg",
+          "credito": "Foto: Raphael / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-0.webp"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Alba_Madonna_-_Google_Art_Project.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "imagens/final-da-copa-tera-p-1.jpg",
-          "label": "Shakira",
-          "credit": "Foto: Dilma Rousseff / CC BY-SA 2.0",
-          "credito": "Foto: Dilma Rousseff / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/37/Madonna_with_child_and_angels.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShakira%2C%202011.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AShakira%2C%202011.jpg",
+          "credito": "Foto: Giovanni Battista Salvi da Sassoferrato / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-1.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Madonna_with_child_and_angels.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "imagens/final-da-copa-tera-p-2.jpg",
-          "label": "BTS na Casa Branca",
-          "credit": "Foto: Misha Komadovsky / domínio público",
-          "credito": "Foto: Misha Komadovsky / domínio público",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Edvard_Munch_-_Madonna_%281894-1895%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHere%20we%20go!%20-BTS%20-BTSatTheWhiteHouse.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AHere%20we%20go!%20-BTS%20-BTSatTheWhiteHouse.jpg",
+          "credito": "Foto: Edvard Munch / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-2.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Madonna_(1894-1895).jpg",
+          "observacao": "",
+          "label": "Opcao 3"
         }
       ],
       "imgs": [
         {
-          "url": "imagens/final-da-copa-tera-p-0.webp",
-          "label": "Madonna em show",
-          "credit": "Foto: chrisweger / CC BY-SA 2.0",
-          "credito": "Foto: chrisweger / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-0.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-0.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Raphael_-_The_Alba_Madonna_-_Google_Art_Project.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMadonna%20Rebel%20Heart%20Tour%202015%20-%20Stockholm%20(23051472299)%20(cropped).jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AMadonna%20Rebel%20Heart%20Tour%202015%20-%20Stockholm%20(23051472299)%20(cropped).jpg",
+          "credito": "Foto: Raphael / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-0.webp"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Alba_Madonna_-_Google_Art_Project.jpg",
+          "observacao": "",
+          "label": "Opcao 1"
         },
         {
-          "url": "imagens/final-da-copa-tera-p-1.jpg",
-          "label": "Shakira",
-          "credit": "Foto: Dilma Rousseff / CC BY-SA 2.0",
-          "credito": "Foto: Dilma Rousseff / CC BY-SA 2.0",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-2.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-2.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/37/Madonna_with_child_and_angels.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShakira%2C%202011.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AShakira%2C%202011.jpg",
+          "credito": "Foto: Giovanni Battista Salvi da Sassoferrato / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-1.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Madonna_with_child_and_angels.jpg",
+          "observacao": "",
+          "label": "Opcao 2"
         },
         {
-          "url": "imagens/final-da-copa-tera-p-2.jpg",
-          "label": "BTS na Casa Branca",
-          "credit": "Foto: Misha Komadovsky / domínio público",
-          "credito": "Foto: Misha Komadovsky / domínio público",
-          "source": "Wikimedia Commons",
+          "url": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-3.jpg",
+          "srcLocal": "imagens-workdir/20260723/m06-show-do-intervalo-da-fin-3.jpg",
+          "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Edvard_Munch_-_Madonna_%281894-1895%29.jpg",
           "fonte": "Wikimedia Commons",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHere%20we%20go!%20-BTS%20-BTSatTheWhiteHouse.jpg",
-          "pagina": "https://commons.wikimedia.org/wiki/File%3AHere%20we%20go!%20-BTS%20-BTSatTheWhiteHouse.jpg",
+          "credito": "Foto: Edvard Munch / Public domain",
           "status": "licenciada",
-          "srcLocal": "imagens/final-da-copa-tera-p-2.jpg"
+          "pagina": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Madonna_(1894-1895).jpg",
+          "observacao": "",
+          "label": "Opcao 3"
         }
       ],
-      "statusImagem": "pendente - downloads falharam"
+      "imagem": {
+        "tipo": "evento",
+        "entidades": [
+          "Madonna",
+          "Shakira"
+        ],
+        "instagram": [],
+        "plataformaOficial": "FIFA"
+      },
+      "pendenciasImagem": [],
+      "visuaisEmbed": []
     }
   ]
 }

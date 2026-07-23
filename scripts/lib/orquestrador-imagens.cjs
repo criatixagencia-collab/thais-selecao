@@ -153,10 +153,21 @@ async function buscarMultiOpcoes(artigo, { alvo = ALVO_PADRAO, minimo = MINIMO_P
     pendencias.push("materia sem bloco `imagem` (entidades/handles) da Etapa 2; busca caiu no modo legado por titulo");
   }
 
+  // Nenhuma fonte pode derrubar a materia inteira: falha vira pendencia.
+  async function tentar(nomeFonte, fn) {
+    try {
+      return await fn();
+    } catch (error) {
+      pendencias.push(`${nomeFonte}: ${error?.message || "falha inesperada"}`);
+      return null;
+    }
+  }
+
   // 1. Wikimedia Commons — sempre, uma query por entidade.
   const wiki = [];
   for (const entidade of plano.entidades) {
-    wiki.push(...await buscarWikimedia(entidade, { limite: 4 }));
+    const r = await tentar(`Wikimedia "${entidade}"`, () => buscarWikimedia(entidade, { limite: 4 }));
+    if (r) wiki.push(...r);
     if (wiki.length >= alvo) break;
   }
 
@@ -168,7 +179,8 @@ async function buscarMultiOpcoes(artigo, { alvo = ALVO_PADRAO, minimo = MINIMO_P
   const insta = [];
   const embeds = [];
   for (const handle of instaHandles) {
-    const r = await buscarInstagram(handle);
+    const r = await tentar(`Instagram @${handle}`, () => buscarInstagram(handle));
+    if (!r) continue;
     insta.push(...r.resultados);
     embeds.push(...r.embeds);
     if (r.erro) pendencias.push(`Instagram @${handle}: ${r.erro}`);
@@ -180,7 +192,8 @@ async function buscarMultiOpcoes(artigo, { alvo = ALVO_PADRAO, minimo = MINIMO_P
     : ((wiki.length + insta.length) < minimo ? perfisPorSubstring(plano.titulo, lerMapa("twitter-profiles.json")).slice(0, 1) : []);
   const twitter = [];
   for (const handle of twitterHandles) {
-    const r = await buscarTwitter(handle);
+    const r = await tentar(`X/Twitter @${handle}`, () => buscarTwitter(handle));
+    if (!r) continue;
     twitter.push(...r.resultados);
     if (r.erro) pendencias.push(`X/Twitter @${handle}: ${r.erro}`);
   }
@@ -192,7 +205,8 @@ async function buscarMultiOpcoes(artigo, { alvo = ALVO_PADRAO, minimo = MINIMO_P
     const query = plano.plataformaOficial
       ? `${entidadePrincipal} ${plano.plataformaOficial} divulgação foto`
       : `${entidadePrincipal} foto`;
-    ddg.push(...await buscarDuckDuckGo(query, { entidadeRelevancia: entidadePrincipal, limite: 4 }));
+    const r = await tentar("DuckDuckGo", () => buscarDuckDuckGo(query, { entidadeRelevancia: entidadePrincipal, limite: 4 }));
+    if (r) ddg.push(...r);
   }
 
   let opcoes = dedupe(intercalar([wiki.slice(0, 4), insta.slice(0, 3), twitter.slice(0, 2), ddg.slice(0, 4)]));

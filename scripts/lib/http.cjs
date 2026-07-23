@@ -232,18 +232,20 @@ async function fetchCache(url, { tipo = "busca", timeoutMs = 15000, headers = {}
   }
 
   let res;
+  let contentType;
+  let buffer;
   try {
     res = await fetchComPolitica(url, { timeoutMs, headers });
+    contentType = res.headers.get("content-type") || "";
+    buffer = Buffer.from(await res.arrayBuffer());
   } catch {
-    // Rede falhou: se ha cache vencido, melhor servir velho que nada.
+    // Rede falhou (na conexao ou no meio do corpo): se ha cache vencido,
+    // melhor servir velho que nada.
     if (meta && fs.existsSync(bodyPath)) {
       return { deCache: true, vencido: true, status: meta.status, contentType: meta.contentType, buffer: fs.readFileSync(bodyPath) };
     }
     return null;
   }
-
-  const contentType = res.headers.get("content-type") || "";
-  const buffer = Buffer.from(await res.arrayBuffer());
   if (res.status === 200) {
     garantirDir(HTTP_CACHE_DIR);
     fs.writeFileSync(bodyPath, buffer);
