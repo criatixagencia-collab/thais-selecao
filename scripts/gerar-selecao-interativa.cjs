@@ -59,15 +59,8 @@ function parseArgs(argv) {
 
 function makeSelectionSlug(date = new Date()) {
   const pad = (value) => String(value).padStart(2, "0");
-  return [
-    "selecao",
-    date.getFullYear(),
-    pad(date.getMonth() + 1),
-    pad(date.getDate()),
-    "-",
-    pad(date.getHours()),
-    pad(date.getMinutes()),
-  ].join("");
+  const dia = `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;
+  return `selecao-${dia}-${pad(date.getHours())}${pad(date.getMinutes())}`;
 }
 
 function readJson(filePath) {

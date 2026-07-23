@@ -21,6 +21,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
+const { atualizarEstado } = require("./lib/estado.cjs");
 const {
   bodyToParagraphs,
   encontrarNotaInterna,
@@ -240,6 +241,7 @@ function main() {
   fs.writeFileSync(outPath, JSON.stringify(pacote, null, 2), "utf8");
   console.log(`Pacote gerado: ${outPath}`);
   console.log(`Posts: ${posts.length}`);
+  atualizarEstado({ etapa: 5, pacote: outPath });
 
   if (!args.skipValidate) {
     console.log("\nValidando com posts:validate-package --live...");

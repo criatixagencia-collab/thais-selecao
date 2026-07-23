@@ -57,7 +57,7 @@ function parseArgs(argv) {
 
 function selectionDirs() {
   return fs.readdirSync(root)
-    .filter((name) => /^selecao-\d{8}-\d{4}$/.test(name))
+    .filter((name) => /^selecao-?\d{8}-\d{4}$/.test(name))
     .map((name) => path.join(root, name))
     .filter((dir) => fs.existsSync(path.join(dir, "index.html")));
 }
@@ -81,7 +81,7 @@ function stagedSelectionDirs() {
 
   const dirs = new Set();
   for (const line of result.stdout.split(/\r?\n/)) {
-    const match = line.match(/^(selecao-\d{8}-\d{4})\//);
+    const match = line.match(/^(selecao-?\d{8}-\d{4})\//);
     if (match) dirs.add(path.join(root, match[1]));
   }
   return [...dirs];

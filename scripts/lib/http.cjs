@@ -48,6 +48,18 @@ const TTL_PADRAO_MS = {
   pagina: 12 * 3600 * 1000,     // HTML de pagina (extracao de credito)
 };
 
+function carregarEnvLocal() {
+  const envPath = path.join(ROOT, ".env");
+  if (!fs.existsSync(envPath)) return;
+  for (const line of fs.readFileSync(envPath, "utf8").split(/\r?\n/)) {
+    const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$/);
+    if (!match) continue;
+    const [, key, rawValue] = match;
+    if (process.env[key]) continue;
+    process.env[key] = rawValue.replace(/^["']|["']$/g, "");
+  }
+}
+
 function hoje() {
   const d = new Date();
   const pad = (v) => String(v).padStart(2, "0");
@@ -252,6 +264,7 @@ async function fetchJsonCache(url, opts = {}) {
 }
 
 module.exports = {
+  carregarEnvLocal,
   UA_NAVEGADOR,
   UA_WIKIMEDIA,
   CACHE_DIR,

@@ -4,9 +4,16 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
+    "etapa3": "node scripts/buscar-multi-opcoes.cjs",
+    "etapa4": "node scripts/publicar-selecao-interativa.cjs",
+    "etapa5": "node scripts/gerar-pacote.cjs",
+    "status": "node scripts/status.cjs",
     "selection:interactive": "node scripts/gerar-selecao-interativa.cjs",
     "selection:validate": "node scripts/validar-selecao-interativa.cjs",
     "selecao:publicar": "node scripts/publicar-selecao-interativa.cjs",
     "imagens:multi": "node scripts/buscar-multi-opcoes.cjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
   }
 }

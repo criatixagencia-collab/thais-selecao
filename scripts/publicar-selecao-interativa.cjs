@@ -3,6 +3,8 @@ const path = require("node:path");
 const { spawnSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
+const fs = require("node:fs");
+const { estadoDoDia, atualizarEstado } = require("./lib/estado.cjs");
 
 function parseArgs(argv) {
   const args = {
@@ -10,6 +12,7 @@ function parseArgs(argv) {
     slug: "",
     noCommit: false,
     noPush: false,
+    novaRodada: false,
     message: "",
   };
 
@@ -24,6 +27,8 @@ function parseArgs(argv) {
       args.noCommit = true;
     } else if (current === "--no-push") {
       args.noPush = true;
+    } else if (current === "--nova-rodada") {
+      args.novaRodada = true;
     } else if (current === "--message" && next) {
       args.message = next;
       i += 1;
@@ -64,6 +69,17 @@ function main() {
   const generator = path.join("scripts", "gerar-selecao-interativa.cjs");
   const validator = path.join("scripts", "validar-selecao-interativa.cjs");
 
+  // Idempotencia: re-run no mesmo dia reutiliza a pasta da selecao em vez
+  // de criar orfa nova (use --nova-rodada para forcar pasta nova).
+  if (!args.slug && !args.novaRodada) {
+    const estado = estadoDoDia();
+    if (estado.selecaoDir && fs.existsSync(path.join(root, estado.selecaoDir))) {
+      args.slug = estado.selecaoDir;
+      args.generatorArgs.push("--slug", estado.selecaoDir);
+      console.log(`Reutilizando a selecao do dia: ${estado.selecaoDir} (re-run; --nova-rodada cria outra)`);
+    }
+  }
+
   console.log("1/4 Gerando selecao interativa pelo gerador oficial...");
   const generated = run(process.execPath, [generator, ...args.generatorArgs]);
   const outputDir = parseOutputDir(`${generated.stdout || ""}\n${generated.stderr || ""}`, args.slug);
@@ -101,6 +117,7 @@ function main() {
 
   console.log("\n4/4 Publicando no GitHub Pages...");
   run("git", ["push", "origin", "main"]);
+  atualizarEstado({ etapa: 4, selecaoDir: outputDir });
   console.log(`Selecao publicada: https://criatixagencia-collab.github.io/thais-selecao/${outputDir}/index.html`);
 }
 

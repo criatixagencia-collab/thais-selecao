@@ -22,6 +22,7 @@ const { setTimeout: sleep } = require("timers/promises");
 const { carregarEnvLocal } = require("./lib/http.cjs");
 const { buscarMultiOpcoes } = require("./lib/orquestrador-imagens.cjs");
 const { baixarImagem } = require("./lib/download.cjs");
+const { atualizarEstado } = require("./lib/estado.cjs");
 
 carregarEnvLocal();
 
@@ -118,6 +119,7 @@ async function main() {
   }
 
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2), "utf8");
+  atualizarEstado({ etapa: 3, workdir: workdirRel });
 
   console.log(`\n📊 RESUMO:`);
   console.log(`  Materias: ${items.length}`);
