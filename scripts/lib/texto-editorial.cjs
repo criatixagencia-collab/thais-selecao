@@ -113,6 +113,37 @@ function encontrarNotaInterna(texto) {
   return FRASES_NOTA_INTERNA.find((frase) => normalizado.includes(frase)) || "";
 }
 
+// Justificativa editorial (raciocinio de bastidor sobre por que a pauta
+// "merece existir") vazando para o corpo publicado. Categoria distinta da
+// nota interna de apuracao: aqui o texto nao tem erro de checagem pendente,
+// mas explica ao LEITOR por que a redacao escolheu a materia, em vez de
+// simplesmente informar o fato. Ja aconteceu ao vivo em 23/07/2026:
+// "Harry Styles cancela show em Sao Paulo por problema de saude na turne"
+// foi publicada com fechamento "A noticia repercute porque...".
+const FRASES_JUSTIFICATIVA_EDITORIAL = [
+  "a noticia repercute porque",
+  "repercute porque",
+  "a pauta tem forca",
+  "tem forca editorial",
+  "para o leitor",
+  "funciona como",
+  "o ponto central e",
+  "ganha interesse",
+  "e relevante porque",
+  "chama atencao porque",
+  "isso importa porque",
+  "merece destaque porque",
+  "vale a pena noticiar",
+  "e uma pauta que",
+  "explica o interesse",
+  "justifica o interesse",
+];
+
+function encontrarJustificativaEditorial(texto) {
+  const normalizado = normalizeForCheck(texto).replace(/\s+/g, " ");
+  return FRASES_JUSTIFICATIVA_EDITORIAL.find((frase) => normalizado.includes(frase)) || "";
+}
+
 // Mojibake classico de UTF-8 lido como Latin-1 ("Ã©", "Ã§", "Ã£"...).
 // Se aparecer, a cadeia de publicacao corrompeu o encoding — falha tecnica.
 function temMojibake(texto) {
@@ -136,6 +167,8 @@ module.exports = {
   hasHardBannedClosing,
   FRASES_NOTA_INTERNA,
   encontrarNotaInterna,
+  FRASES_JUSTIFICATIVA_EDITORIAL,
+  encontrarJustificativaEditorial,
   temMojibake,
   pareceSemAcento,
 };

@@ -25,6 +25,7 @@ const { atualizarEstado } = require("./lib/estado.cjs");
 const {
   bodyToParagraphs,
   encontrarNotaInterna,
+  encontrarJustificativaEditorial,
   temMojibake,
   pareceSemAcento,
 } = require("./lib/texto-editorial.cjs");
@@ -79,6 +80,13 @@ function checarPortugues(item, campos, errors) {
     const nota = encontrarNotaInterna(valor);
     if (nota) errors.push(`"${item.title}": ${campo} contem nota interna de apuracao ("${nota}").`);
     if (temMojibake(valor)) errors.push(`"${item.title}": ${campo} contem mojibake (encoding quebrado).`);
+    const justificativa = encontrarJustificativaEditorial(valor);
+    if (justificativa) {
+      errors.push(
+        `"${item.title}": ${campo} contem justificativa editorial interna ("${justificativa}") — ` +
+        `explica pro leitor por que a materia "repercute"/"tem forca", em vez de informar o fato. Reescrever.`,
+      );
+    }
   }
   if (pareceSemAcento(campos.body)) {
     errors.push(`"${item.title}": corpo sem NENHUM acento — reprovado pela Etapa 4.5 (revisao de portugues).`);

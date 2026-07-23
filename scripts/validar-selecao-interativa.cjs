@@ -9,6 +9,7 @@ const {
   hasFactualAnchor,
   isAbstractClosing,
   hasHardBannedClosing,
+  encontrarJustificativaEditorial,
 } = require("./lib/texto-editorial.cjs");
 const DEFAULT_MIN_IMAGES = Number(process.env.THAIS_MIN_IMAGES || 3);
 const DEFAULT_MIN_BODY_CHARS = Number(process.env.THAIS_MIN_BODY_CHARS || 800);
@@ -177,6 +178,24 @@ function validateSelection(dir, args) {
       fail(
         errors,
         `${label}: fechamento abstrato em "${title}". O ultimo paragrafo precisa encerrar com fato, estado atual, proximo passo ou fala verificavel.`,
+      );
+    }
+
+    // Justificativa editorial (raciocinio de bastidor sobre por que a pauta
+    // "repercute"/"tem forca"/"funciona para o leitor") vazando pro corpo.
+    // Bug real: "Harry Styles cancela show em Sao Paulo" foi ao ar em
+    // 23/07/2026 com fechamento "A noticia repercute porque...". Diferente
+    // da nota interna de apuracao: aqui nao ha erro de checagem, e
+    // raciocinio de selecao de pauta que nunca deveria ir ao leitor. Hard
+    // ban, sem excecao por ancora factual — o problema e a NATUREZA da
+    // frase (fala sobre a materia), nao a falta de fato.
+    const justificativa = encontrarJustificativaEditorial(body);
+    if (justificativa) {
+      fail(
+        errors,
+        `${label}: "${title}" tem justificativa editorial interna vazando no corpo ("${justificativa}"). ` +
+        `Corpo nunca explica pro leitor por que a materia "repercute"/"tem forca"/"funciona" — sempre informa o fato. ` +
+        `Reescrever o trecho como fato, estado atual ou desdobramento verificavel.`,
       );
     }
 
