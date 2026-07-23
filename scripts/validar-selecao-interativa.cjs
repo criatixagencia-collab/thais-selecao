@@ -13,6 +13,7 @@ const {
 const DEFAULT_MIN_IMAGES = Number(process.env.THAIS_MIN_IMAGES || 3);
 const DEFAULT_MIN_BODY_CHARS = Number(process.env.THAIS_MIN_BODY_CHARS || 800);
 const DEFAULT_MIN_PARAGRAPHS = Number(process.env.THAIS_MIN_PARAGRAPHS || 3);
+const DEFAULT_MAX_DIAS_FATO = Number(process.env.THAIS_MAX_DIAS_FATO || 3);
 
 // Regra de evolucao do Regimento 03: bug objetivo e repetivel vira validacao aqui,
 // nao paragrafo novo no regimento.
@@ -25,6 +26,7 @@ function parseArgs(argv) {
     minImages: DEFAULT_MIN_IMAGES,
     minBodyChars: DEFAULT_MIN_BODY_CHARS,
     minParagraphs: DEFAULT_MIN_PARAGRAPHS,
+    maxDiasFato: DEFAULT_MAX_DIAS_FATO,
     allowRemote: false,
   };
 
@@ -49,6 +51,9 @@ function parseArgs(argv) {
       i += 1;
     } else if (current === "--allow-remote") {
       args.allowRemote = true;
+    } else if (current === "--max-dias-fato" && next) {
+      args.maxDiasFato = Number(next);
+      i += 1;
     }
   }
 
@@ -180,6 +185,31 @@ function validateSelection(dir, args) {
       fail(errors, `${label}: "${title}" tem ${images.length} imagem(ns); minimo ${args.minImages}.`);
     }
     totalImages += images.length;
+
+    // Atualidade: evento pontual (show, estreia, lancamento) publicado dias
+    // depois de ja ter acontecido, sem repercussao nova, e materia velha indo
+    // ao ar como se fosse fato do dia. Bug real: show do intervalo da Copa,
+    // ocorrido em 20/07, publicado em 23/07 sem fato novo (registrado por
+    // Rafael, 23/07/2026). `dataDoFato` e obrigatorio; `fatoNovo` justifica
+    // por que ainda vale publicar apos o prazo (repercussao, desdobramento,
+    // declaracao nova — nao o evento em si).
+    if (!item.dataDoFato) {
+      fail(errors, `${label}: "${title}" sem campo "dataDoFato" (data ISO do fato principal, ex. "2026-07-20"). Obrigatorio desde 23/07/2026.`);
+    } else {
+      const dataFato = new Date(`${item.dataDoFato}T00:00:00`);
+      if (Number.isNaN(dataFato.getTime())) {
+        fail(errors, `${label}: "${title}" com "dataDoFato" invalida ("${item.dataDoFato}"); use AAAA-MM-DD.`);
+      } else {
+        const hoje = new Date(new Date().toISOString().slice(0, 10) + "T00:00:00");
+        const diasDesdeOFato = Math.round((hoje - dataFato) / (24 * 3600 * 1000));
+        if (diasDesdeOFato >= args.maxDiasFato && !String(item.fatoNovo || "").trim()) {
+          fail(
+            errors,
+            `${label}: "${title}" fala de fato de ${item.dataDoFato} (${diasDesdeOFato} dia(s) atras; limite ${args.maxDiasFato} ou mais) sem "fatoNovo" preenchido explicando por que ainda vale publicar hoje (repercussao/desdobramento, nao o evento em si). Materia esta velha.`,
+          );
+        }
+      }
+    }
 
     // Embeds oficiais do Instagram: opcionais, mas quando existem precisam
     // de URL real de post/perfil, credito de perfil e status "usar via embed".
